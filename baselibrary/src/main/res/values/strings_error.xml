@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_logical" translatable="false">逻辑错误</string>
+    <string name="error_unknown" translatable="false">未知错误</string>
+    <string name="error_http" translatable="false">网络请求错误</string>
+    <string name="error_server" translatable="false">服务器错误</string>
+    <string name="error_chat_self" translatable="false">不能和自己聊天</string>
+</resources>

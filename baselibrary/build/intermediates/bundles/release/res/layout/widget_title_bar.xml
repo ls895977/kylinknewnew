@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_widget_TitleBar"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:background="@color/GRAY">
+
+    <View
+        android:id="@+id/v_status_bar_area_widget_TitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_contents_widget_TitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/TitleBar_Height"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/rl_center_widget_TitleBar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/tv_center_widget_TitleBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxEms="10"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColor="@color/BLACK"
+                android:textSize="16dp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iv_center_widget_TitleBar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:minWidth="@dimen/TitleBar_Height"
+                android:scaleType="centerInside"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <ProgressBar
+            android:id="@+id/pb_widget_TitleBar"
+            style="@android:style/Widget.ProgressBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="4dp"
+            android:layout_toLeftOf="@id/rl_center_widget_TitleBar"
+            android:visibility="gone"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_left_widget_TitleBar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/pb_widget_TitleBar">
+
+            <TextView
+                android:id="@+id/tv_left_widget_TitleBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxEms="5"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColor="@color/BLACK"
+                android:textSize="14dp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iv_left_widget_TitleBar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:minWidth="@dimen/TitleBar_Height"
+                android:scaleType="centerInside"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_right_widget_TitleBar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/rl_center_widget_TitleBar">
+
+            <TextView
+                android:id="@+id/tv_right_widget_TitleBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxEms="8"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColor="@color/BLACK"
+                android:textSize="14dp"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/iv_right_widget_TitleBar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:minWidth="@dimen/TitleBar_Height"
+                android:scaleType="centerInside"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/v_underline_widget_TitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/TitleBar_Stroke"
+            android:layout_alignParentBottom="true"
+            android:background="@color/BLACK"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</RelativeLayout>

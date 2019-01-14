@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <com.maoyongxin.myapplication.server.widget.SelectableRoundedImageView
+            android:id="@+id/img_stranger_header"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/user_head_img"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+
+            app:sriv_left_bottom_corner_radius="30dip"
+            app:sriv_left_top_corner_radius="30dip"
+            app:sriv_right_bottom_corner_radius="30dip"
+            app:sriv_right_top_corner_radius="30dip" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="2dp">
+            <LinearLayout
+                android:layout_marginBottom="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:singleLine="true"
+                    android:id="@+id/tv_xiaoqu"
+                    android:text="未加入小区"
+                    android:textColor="@color/main_theme"
+                    android:textSize="@dimen/textSize_normal"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:id="@+id/btn_follow"
+                    android:text="关注"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_normal"
+                    android:background="@drawable/bg_radius_red"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="25dp" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_stranger_person_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="张三"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/textSize_normal" />
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:id="@+id/tv_stranger_interesting"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="未设置爱好"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/textSize_normal" />
+
+            <TextView
+                android:singleLine="true"
+                android:drawablePadding="10dp"
+                android:drawableLeft="@mipmap/local2"
+                android:layout_marginTop="2dp"
+                android:id="@+id/tv_stranger_address_community"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="贵阳.城堡小区"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/textSize_normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+<View
+    android:layout_width="match_parent"
+    android:layout_height="3dp"
+    android:background="@color/white_somoke"/>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 阴影图片，android:left表示阴影图片左边到背景图片左边的距离
+    android:top表示阴影图片上边到背景图片上边的距离-->
+    <item android:state_selected="true">
+        <shape>
+            <corners android:radius="3dip" />
+            <solid android:color="#c46f1f" />
+        </shape>
+    </item>
+    <item android:state_selected="false">
+        <shape>
+            <corners android:radius="5dip" />
+            <solid android:color="#f6f6f6" />
+        </shape>
+    </item>
+</selector>

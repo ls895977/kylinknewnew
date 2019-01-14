@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="?android:attr/selectableItemBackground"
+    android:gravity="center_vertical"
+
+    android:layout_marginLeft="@dimen/album_dp_15"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <android.support.v7.widget.CardView
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="@dimen/album_dp_10"
+            android:layout_gravity="center"
+            >
+            <ImageView
+
+                android:id="@+id/img_jingxuan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:transitionName="qtx"
+                android:scaleType="centerCrop"
+                android:background="@drawable/rc_corner_style"
+
+                />
+
+        </android.support.v7.widget.CardView>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name_shanghui"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="热门商会"
+                        android:gravity="left"
+                        android:textSize="@dimen/textSize_bigger"
+                        android:layout_margin="@dimen/album_dp_4"
+                        android:textColor="@color/black_textview"
+                        android:textStyle="bold"
+                        android:transitionName="qunmingzi"
+                        ></TextView>
+
+                    <TextView
+                        android:id="@+id/groupTheme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/album_dp_4"
+                        android:text="商会主题：智能制造"
+                        android:textSize="@dimen/textSize_big" />
+                    <TextView
+                        android:id="@+id/topicNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_deco"
+                        android:text="话题数：3485个"/>
+
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:id="@+id/memnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人数"
+                    android:textColor="@color/text_orange"
+
+                    android:textSize="12sp" />
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="人已加入"
+                    android:textColor="@color/text_orange"
+                    android:layout_marginRight="10dp"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/headurl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/num_shanghui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+</LinearLayout>

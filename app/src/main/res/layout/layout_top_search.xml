@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/ll_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_theme"
+        android:orientation="vertical"
+        android:visibility="gone"></LinearLayout>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:id="@+id/search_title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="#0195ff" >
+        <ImageView
+            android:id="@+id/img_search_back"
+            android:src="@drawable/de_actionbar_back"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="25dp" />
+        <com.maoyongxin.myapplication.server.widget.ClearWriteEditText
+            android:id="@+id/edit_search_title"
+            android:background="@drawable/bg_radius_white"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/sealtalk_search"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_do_search"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@color/white"
+            android:textSize="@dimen/abc_text_size_title_material_toolbar"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

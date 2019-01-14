@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/white"
+
+    android:layout_gravity="center"
+    android:paddingBottom="5dp"
+
+
+
+    >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:elevation="2dp"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginBottom="3dp"
+            android:paddingBottom="5dp"
+            >
+            <com.maoyongxin.myapplication.server.widget.SelectableRoundedImageView
+                android:id="@+id/img_project_follow"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+
+                android:background="@color/TRANSPARENT"
+
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/groupName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="群名称"/>
+
+            <Button
+                android:id="@+id/bt_follow"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:text="进入"
+                android:background="@drawable/bg_radius_blue_tiny"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp"
+                />
+        </LinearLayout>
+
+
+
+
+</LinearLayout>

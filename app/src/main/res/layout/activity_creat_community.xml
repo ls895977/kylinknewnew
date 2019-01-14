@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_creat_community"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.maoyongxin.myapplication.ui.CreatCommunityActivity"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/ll_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:elevation="3dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+         >
+        <ImageView
+            android:id="@+id/icon_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="创建服务号"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/btn_doCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建"
+            android:textColor="@color/white"
+            android:background="@drawable/bg_radius_blue_tiny"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/line_map"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="5dp"
+                    android:layout_margin="5dp"
+                    app:cardElevation="2dp">
+                    <com.amap.api.maps.MapView
+                        android:id="@+id/map_addressChoice"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></com.amap.api.maps.MapView>
+                </android.support.v7.widget.CardView>
+
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="若定位失败，请返回上一个界面重新进入"
+                android:drawableLeft="@mipmap/black_point"
+                android:textColor="@color/stroke"
+                android:layout_gravity="bottom"
+                android:textSize="@dimen/textSize_small"
+                android:paddingLeft="10dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="地址："
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/textSize_normal" />
+
+                <TextView
+                    android:id="@+id/tv_communityAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:hint="点击地图选择地址"
+                    android:singleLine="true"
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/textSize_normal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/thick_divider_1px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/text_hint"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="企业名称："
+                    android:textColor="@color/text_normal"
+                    android:textSize="@dimen/textSize_normal" />
+
+                <com.maoyongxin.myapplication.server.widget.ClearWriteEditText
+                    android:id="@+id/edit_communityName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:hint="请输入企业名称"
+                    android:textColor="@color/text_tips_color"
+                    android:textSize="@dimen/textSize_normal"
+                    android:maxLines="1"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:layout_marginLeft="10dp"
+                >
+                <ImageView
+                    android:id="@+id/img_communityCreate"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="3dp"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/icon_takepicutre"
+                    android:elevation="1dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="设置服务号头像，方便客户查找"
+                    />
+            </LinearLayout>
+            <com.maoyongxin.myapplication.server.widget.ClearWriteEditText
+                android:id="@+id/edit_communityNote"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_margin="10dp"
+                android:background="@color/background"
+                android:gravity="start"
+                android:hint="请用简短的语言概括公司业务"
+                android:textColor="@color/text_tips_color"
+                android:padding="10dp"
+                android:textSize="@dimen/textSize_normal" />
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

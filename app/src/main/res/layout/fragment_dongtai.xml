@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_noDynamic"
+        android:text="该用户暂未发布任何动态"
+        android:textSize="@dimen/textSize_bigger"
+        android:textColor="@color/text_normal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.maoyongxin.myapplication.ui.widget.mylistview.LoadListView
+        android:id="@+id/lv_dongtaiList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="0dp"
+        android:divider="@null"/>
+</LinearLayout>

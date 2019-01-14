@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maoyongxin.myapplication.tool.VipNaviActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_somoke">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <include layout="@layout/item_poi_list" ></include>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_radius_blue_tiny"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/bossName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="联系人"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/zhiwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableLeft="@mipmap/icon_white_point"
+                android:gravity="center_vertical"
+                android:text="职位"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+
+        <TextView
+
+            android:id="@+id/companyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5sp"
+            android:text="企业"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:drawableEnd="@mipmap/icon_next_white"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"></TextView>
+        <TextView
+
+            android:id="@+id/companyadress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="企业地址"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold"
+
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@mipmap/icon_small_location"></TextView>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/white_somoke"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/album_dp_6"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="@dimen/album_dp_15"
+            android:layout_margin="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/tele" />
+
+            <TextView
+                android:id="@+id/tel_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/album_dp_4"
+                android:text="电话  "
+                android:textColor="@color/black_textview"
+
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/white_somoke"
+            />
+        <LinearLayout
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/album_dp_6"
+            android:layout_margin="10dp"
+            android:layout_marginRight="@dimen/album_dp_15"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/webadress" />
+
+            <TextView
+                android:id="@+id/webadress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/album_dp_4"
+                android:text="服务号  "
+                android:textColor="@color/black_textview"
+                android:textSize="14sp" />
+
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/white_somoke"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/album_dp_6"
+            android:layout_margin="10dp"
+            android:layout_marginRight="@dimen/album_dp_15"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/email" />
+
+            <TextView
+                android:id="@+id/emaill"
+                android:layout_width="252dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/album_dp_4"
+                android:text="服务口号  "
+                android:textColor="@color/black_textview"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@color/white_somoke"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/white_somoke"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="0.5"
+        android:layout_marginBottom="@dimen/album_dp_1"
+        android:background="@color/white"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:text="主营业务:"
+            android:drawableLeft="@mipmap/main_progress"
+            android:textSize="15dp" />
+        <ScrollView
+
+            android:layout_below="@id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+
+            >
+            <LinearLayout
+
+                android:id="@+id/content_ScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/white_somoke"
+        />
+    <TextView
+        android:id="@+id/toshoucangjia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+
+        android:textColor="@color/black_textview"
+        android:textSize="@dimen/textSize_normal"
+        android:padding="10dp"
+        android:drawableEnd="@mipmap/icon_next"
+        android:text="转到收藏夹"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_somoke"
+        />
+    <TextView
+        android:id="@+id/lishijilu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/white"
+        android:textColor="@color/black_textview"
+        android:textSize="@dimen/textSize_normal"
+        android:padding="10dp"
+        android:drawableEnd="@mipmap/icon_next"
+        android:text="历史纪录"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/white_somoke"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+
+
+        android:background="@color/white">
+        <Button
+            android:id="@+id/bt_shoucang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:textColor="@color/black_textview"
+            android:textSize="@dimen/textSize_small"
+            android:paddingTop="5dp"
+            android:drawableTop="@mipmap/icon_shoucang"
+            android:text="收藏"/>
+        <Button
+            android:id="@+id/bt_zhuanfa"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:textSize="@dimen/textSize_small"
+            android:textColor="@color/black_textview"
+
+            android:paddingTop="5dp"
+            android:drawableTop="@mipmap/icon_show"
+            android:text="转发"/>
+        <Button
+            android:id="@+id/bt_Sendmessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:textSize="@dimen/textSize_small"
+
+            android:paddingTop="5dp"
+            android:textColor="@color/black_textview"
+            android:drawableTop="@mipmap/icon_stmsg"
+            android:text="短信"/>
+        <Button
+            android:id="@+id/bt_newCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:textSize="@dimen/textSize_small"
+
+            android:paddingTop="5dp"
+            android:drawableTop="@mipmap/icon_calll"
+            android:textColor="@color/black_textview"
+            android:text="电话"/>
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>

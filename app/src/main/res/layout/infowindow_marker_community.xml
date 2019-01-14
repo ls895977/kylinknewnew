@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.maoyongxin.myapplication.server.widget.SelectableRoundedImageView
+            android:id="@+id/img_communityMarker"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/community_icon_default"
+            app:sriv_left_bottom_corner_radius="15dip"
+            app:sriv_left_top_corner_radius="15dip"
+            app:sriv_right_bottom_corner_radius="15dip"
+            app:sriv_right_top_corner_radius="15dip" />
+        <TextView
+            android:id="@+id/tv_infoCommunityName"
+            android:text="德福中心"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maoyongxin.myapplication.ui.groupchat.GroupAllList">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_back"
+            android:layout_gravity="center_vertical"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/rc_corner_style"
+
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+
+                android:hint="查找商会、联系人"
+                android:gravity="center"
+                android:textSize="@dimen/textSize_small"
+
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <ListView
+            android:id="@+id/grouptypeList"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+
+            android:elevation="1dp"
+            android:scrollbars="none"
+            android:background="@color/white_somoke"
+            android:divider="@color/white"
+            android:dividerHeight="0dp"
+
+
+            ></ListView>
+        <GridView
+            android:id="@+id/gride_grouplist"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:elevation="1dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbarSize="@dimen/album_dp_10"
+            android:numColumns="1"
+            android:stretchMode="columnWidth"
+            android:background="@color/white"
+            android:scrollbars="none"
+            android:layout_weight="4"></GridView>
+    </LinearLayout>
+
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>

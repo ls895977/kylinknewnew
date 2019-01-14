@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_reciever_friends_push"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context="com.maoyongxin.myapplication.ui.RecieverFriendsPushActivity">
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:id="@+id/ll_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/main_theme"
+        android:orientation="vertical"
+        android:visibility="gone"></LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="10dp"
+        android:textColor="@color/WHITE"
+        android:textSize="@dimen/textSize_big" />
+
+    <TextView
+        android:id="@+id/tv_request_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/WHITE"
+        android:padding="10dp"
+        android:textColor="@color/text_normal"
+        android:textSize="@dimen/textSize_max" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="附加信息:"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/textSize_normal" />
+
+        <TextView
+            android:id="@+id/tv_request_data"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:background="@color/WHITE"
+            android:padding="10dp"
+            android:text="我是一只小鸭子咿呀咿呀哟"
+            android:textColor="@color/text_tips_color"
+            android:textSize="@dimen/textSize_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_radius_blue"
+            android:text="同意"
+            android:textColor="@color/WHITE"
+            android:textSize="@dimen/textSize_big" />
+
+        <Button
+            android:id="@+id/btn_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_radius_light"
+            android:text="拒绝"
+            android:textColor="@color/text_heavy"
+            android:textSize="@dimen/textSize_big" />
+    </LinearLayout>
+</LinearLayout>

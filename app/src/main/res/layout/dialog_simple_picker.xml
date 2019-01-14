@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="bottom"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/include_select_dialog_title"/>
+
+    <com.jky.engineeringmanager.widget.view.Picker
+        android:id="@+id/SimplePickerDialog_picker"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:background="@color/WHITE"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:background="@color/WHITE"/>
+</LinearLayout>

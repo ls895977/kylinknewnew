@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.jky.baselibrary.widget.TitleBar
+        android:id="@+id/TitleBar_like"
+        style="@style/TitleBar.White"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+
+        app:backFunction="false"
+        app:function="textLeft|textCenter|textRight"
+        app:textCenter="服务号"
+        app:textRight="创建"
+        app:textLeft="查找"
+        app:textBackgroundRight="@color/blue_tiny"
+        app:textColorRight="@color/white"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+    </com.jky.baselibrary.widget.TitleBar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <WebView
+                android:id="@+id/wv_bison"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></WebView>
+        </LinearLayout>
+    </ScrollView>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                app:cardElevation="1dp"
+                app:cardCornerRadius="1dp">
+                <LinearLayout
+                    android:id="@+id/line_myCommunity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:padding="5dp"
+                        android:text="我的团队"
+                        android:textColor="@color/text_normal"
+                        android:drawableLeft="@mipmap/redpoint"
+                        android:textSize="@dimen/textSize_big" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.maoyongxin.myapplication.server.widget.SelectableRoundedImageView
+                                android:id="@+id/img_myCommunityIcon"
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_margin="5dp"
+                                android:scaleType="centerCrop"
+
+                                app:sriv_left_bottom_corner_radius="15dip"
+                                app:sriv_left_top_corner_radius="15dip"
+                                app:sriv_right_bottom_corner_radius="15dip"
+                                app:sriv_right_top_corner_radius="15dip" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/tv_myCommunityName"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:paddingLeft="10dp"
+                                        android:text="德府小区"
+                                        android:textColor="@color/text_color"
+                                        android:textSize="@dimen/textSize_big_dp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_myCommunityId"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:paddingLeft="10dp"
+                                        android:text="id"
+                                        android:textColor="@color/mine_head_color"
+                                        android:textSize="@dimen/textSize_big_dp" />
+                                </LinearLayout>
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:background="#FF9B00"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:text="11级"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/textSize_normal" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:background="#6CCCF2"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:text="27人"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/textSize_normal" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="10dp"
+                                        android:background="#FF378B"
+                                        android:paddingLeft="5dp"
+                                        android:paddingRight="5dp"
+                                        android:text="90后"
+                                        android:textColor="@color/white"
+                                        android:textSize="@dimen/textSize_normal" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/white"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:paddingLeft="10dp"
+                                        android:text="创建时间："
+                                        android:textColor="@color/text_normal"
+                                        android:textSize="@dimen/textSize_normal" />
+
+                                    <TextView
+                                        android:id="@+id/tv_communityCreatTime"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:textColor="@color/text_normal"
+                                        android:textSize="@dimen/textSize_normal" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/album_dp_1"
+                        android:background="#F7F7F7"></View>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="群简介："
+                            android:textColor="@color/text_normal"
+                            android:textSize="@dimen/textSize_normal" />
+
+                        <TextView
+                            android:id="@+id/tv_communityNote"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_normal"
+                            android:textSize="@dimen/textSize_normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:paddingLeft="10dp"
+                            android:src="@mipmap/local2" />
+
+                        <TextView
+                            android:id="@+id/tv_communityAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_normal"
+                            android:textSize="@dimen/textSize_normal" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/tv_noCommunity"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/WHITE"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="你还没有加入任何社区，请创建，或者加入一个社区吧"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/textSize_normal"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="5dp"
+                android:text="附近团队"
+                android:textColor="@color/text_normal"
+                android:drawableLeft="@mipmap/bluepoint"
+                android:textSize="@dimen/textSize_big" />
+
+            <TextView
+                android:id="@+id/tv_noNearbyCommunity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="附近暂无小区信息"
+                android:textColor="@color/text_tips_color"
+                android:textSize="@dimen/textSize_big"
+                android:visibility="gone" />
+
+            <com.maoyongxin.myapplication.ui.widget.NoScrollListView
+                android:id="@+id/lv_nearbyCommunityList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

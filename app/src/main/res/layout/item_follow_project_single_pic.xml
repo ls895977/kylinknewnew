@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:orientation="vertical">
+
+    <com.maoyongxin.myapplication.server.widget.SelectableRoundedImageView
+        android:id="@+id/img_project_follow"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+
+        android:background="@color/TRANSPARENT"
+        android:elevation="@dimen/album_dp_1"
+        android:scaleType="centerCrop"
+        app:sriv_left_top_corner_radius="2dp"
+        app:sriv_right_bottom_corner_radius="2dp"
+        app:sriv_right_top_corner_radius="2dp"
+        app:sriv_left_bottom_corner_radius="2dp"/>
+
+    <ImageView
+        android:id="@+id/im_play"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+
+
+        android:elevation="2dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_play_circle_outline_black_24dp" />
+
+</FrameLayout>

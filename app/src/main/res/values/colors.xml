@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/def_sub_3_gray_99</color>
+    <color name="colorPrimaryDark">@color/def_sub_3_gray_99</color>
+    <color name="colorAccent">@color/main_theme</color>
+    <color name="colorControlHighlight">@color/TRANSPARENT</color>
+    <color name="black">#3C3C3C</color>
+    <!--Define Colors-->
+    <color name="stand_bg">#fff6f6f6</color>
+    <color name="white_pressed">#ffd5d5d5</color>
+    <color name="hintColor">#717068</color>
+    <color name="detail_content">#ff666666</color>
+    <color name="def_main_1">#28bbe6</color>
+    <color name="red">#ffff0000</color>
+    <color name="transparent">#00000000</color>
+    <color name="def_sub_1_pink">#ff82ba</color>
+    <color name="def_sub_2_yellow">#ffc510</color>
+    <color name="def_sub_3_gray_99">#999999</color>
+    <color name="def_sub_4_gray_d8">#d8d8d8</color>
+    <color name="def_sub_5_gray_f3">#f3f3f3</color>
+
+    <color name="def_text_1">#323232</color>    <color name="white_somoke">#f1f4f4</color>
+    <color name="def_text_2">#494949</color>
+    <color name="def_text_3">#6b6b6b</color>
+    <color name="def_text_4">#999999</color>
+    <color name="def_text_5">#d8d8d8</color>
+    <color name="def_text_6">#111111</color>
+    <color name="ab_black">#000000</color>
+    <!--Functional Colors-->
+    <color name="main_theme">@color/def_main_1</color>
+    <color name="stroke_heavy">@color/def_sub_3_gray_99</color>
+    <color name="stroke">@color/def_sub_4_gray_d8</color>
+    <color name="background">@color/def_sub_5_gray_f3</color>
+    <color name="font_black_6">#ff666666</color>
+    <color name="gray">#6b6b6b</color>
+    <color name="text_heavy">@color/def_text_1</color>
+    <color name="text_normal">@color/def_text_2</color>
+    <color name="text_tab">@color/def_text_3</color>
+    <color name="text_deco">@color/def_text_4</color>
+    <color name="text_hint">@color/def_text_5</color>
+    <color name="text_white">@color/WHITE</color>
+    <color name="text_orange">@color/ORANGE</color>
+    <!--Special Colors-->
+    <color name="half_alpha_black">#80000000</color>
+    <color name="_30_alpha_black">#4c000000</color>
+
+    <color name="black_textview">#565656</color>
+    <color name="group_list_black_textview">#353535</color>
+    <color name="group_list_gray">#999999</color>
+    <color name="group_list_liner">#e4e4e4</color>
+    <color name="main_title_backgroud">#F2F2F2</color>
+    <color name="main_regist">#ffffff</color>
+    <color name="button_backgroud">#0195ff</color>
+    <color name="de_title_bg">#0195ff</color>
+    <color name="blue_tiny">#63B8FF</color>
+    <color name="blue_mini">#aaceff</color>
+    <color name="seal_bg">#f0f0f6</color>
+
+    <color name="rc_text_color_secondary_inverse">@android:color/white</color>
+
+    <!--actionbar-->
+    <color name="de_actionbar_bg">#0195ff</color>
+    <!---->
+    <color name="de_action_color">#3498DB</color>
+    <color name="de_action_white">@android:color/white</color>
+    <color name="de_transparent">#00000000</color>
+
+    <color name="de_draft_color">#cb120f</color>
+    <color name="main_theme_color">#0195ff</color>
+
+    <color name="press">#e8e8e8</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="text_line_color">#dfdfdd</color>
+    <color name="text_black_color">#333333</color>
+    <color name="text_tips_color">#666666</color>
+    <color name="mine_head_color">#cccccc</color>
+    <color name="text_color">#353535</color>
+
+    <!--SWITCH-->
+    <color name="ksw_md_ripple_normal">#1E000000</color>
+    <color name="ksw_md_solid_shadow">#33000000</color>
+    <color name="ksw_md_solid_normal">#ECECEC</color>
+    <color name="ksw_md_solid_disable">#FFFFFF</color>
+    <color name="ksw_md_solid_checked_disable">#aaaaaa</color>
+
+    <color name="textColorWhite">#FFFFFF</color>
+    <color name="ac_filter_string_color">#0099ff</color>
+    <color name="dividerColor">#CCCCCC</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="backgroundColor">#FFFFFFFF</color>
+    <color name="colorTab">#FFFFFF</color>
+    <color name="tranprent">#00FFFFFF</color>
+    <color name="tranprent_white">#88FFFFFF</color>
+</resources>

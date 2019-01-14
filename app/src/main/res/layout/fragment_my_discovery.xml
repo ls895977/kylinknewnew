@@ -1,0 +1,321 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.maoyongxin.myapplication.ui.editapp.findfragment.MyDiscoveryFragment"
+
+    android:fitsSystemWindows="true"
+    >
+    <android.support.v7.widget.CardView
+        android:id="@+id/map_card"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/morerenmai"
+
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/top_text"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            android:background="@drawable/bg_radius_blue_tiny"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:transitionName="top_text"
+            android:text="  在您附件有30+个企业，点击地图查看详情"
+            android:visibility="gone"/>
+
+
+        <LinearLayout
+            android:id="@+id/line_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/press"
+            android:layout_marginTop="30dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:id="@+id/line_poiType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_poiType1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_radius_light"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@drawable/text_view_selector"
+                    android:textSize="@dimen/textSize_big" />
+
+                <TextView
+                    android:id="@+id/tv_poiType2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_radius_light"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@drawable/text_view_selector"
+                    android:textSize="@dimen/textSize_big" />
+
+                <TextView
+                    android:id="@+id/tv_poiType3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_radius_light"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@drawable/text_view_selector"
+                    android:textSize="@dimen/textSize_big" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38sp"
+            android:layout_marginTop="8sp"
+            android:layout_marginLeft="10sp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_marginRight="@dimen/album_dp_50"
+            android:visibility="gone"
+            android:elevation="@dimen/album_dp_1"
+            android:padding="@dimen/album_dp_1">
+            <include layout="@layout/spinner"></include>
+
+            <com.maoyongxin.myapplication.server.widget.ClearWriteEditText
+                android:id="@+id/edit_poi_search"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:hint="输入关键词查找企业"
+                android:textColor="@color/text_tips_color"
+
+                android:textSize="19sp" />
+
+            <ImageView
+                android:id="@+id/img_doSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:src="@drawable/sealtalk_search" />
+        </LinearLayout>
+
+        <com.amap.api.maps.TextureMapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/morerenmai"
+            android:transitionName="ditu_title"
+            >
+
+            <ImageView
+                android:id="@+id/img_centerAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/album_dp_4"
+                android:elevation="@dimen/album_dp_4"
+                android:paddingBottom="50dp"
+
+                android:src="@mipmap/icon_poi_add" />
+        </com.amap.api.maps.TextureMapView>
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/morerenmai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fout_icon"
+        android:layout_marginLeft="@dimen/album_dp_10"
+        android:text="更多信息"
+        />
+
+    <LinearLayout
+        android:id="@+id/fout_icon"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:layout_alignEnd="@+id/map_card"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/tohuiyuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/album_dp_4"
+            android:layout_weight="1"
+            app:cardCornerRadius="@dimen/album_dp_4"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/huiyuan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:text="商业社区" />
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/shangwuhuodong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/album_dp_4"
+            android:layout_weight="2"
+            app:cardCornerRadius="@dimen/album_dp_4"
+            android:visibility="gone"
+
+            >
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/huangye" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:scaleType="centerCrop"
+
+                android:background="#33000000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:text="优选服务号"
+                android:textColor="@color/white"
+                android:layout_margin="5dp"
+                android:textSize="@dimen/textSize_big"/>
+
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/yellow_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/album_dp_4"
+            android:layout_weight="3"
+            app:cardCornerRadius="@dimen/album_dp_4">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/rmxw"
+                android:background="@color/white"
+                />
+            <ImageView
+                android:id="@+id/button_zhihu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:background="#33000000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|bottom"
+                android:text="公告需求(内测)"
+                android:textColor="@color/white"
+                android:layout_margin="5dp"
+                android:textSize="@dimen/textSize_big"/>
+
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/line_myteam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/album_dp_4"
+            android:layout_weight="1"
+            app:cardCornerRadius="@dimen/album_dp_4"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hezuo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:text="团队信息" />
+
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_showRoad"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_radius_bigrad_blue"
+        android:drawableLeft="@mipmap/icon_road_line"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="路线"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="gone" />
+    <ListView
+        android:id="@+id/list_poiResult"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:divider="#00000000"
+        android:background="@color/white"></ListView>
+
+</RelativeLayout>

@@ -1,0 +1,217 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maoyongxin.myapplication.ui.editapp.findfragment.Discovery"
+    android:fitsSystemWindows="true">
+    <TextView
+        android:id="@+id/top_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:background="@drawable/bg_radius_blue_tiny"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+
+        android:paddingBottom="5dp"
+        android:text="彼信，为您建立双向沟通交流渠道"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/top_text">
+
+    <LinearLayout
+        android:id="@+id/line_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/press"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:id="@+id/line_poiType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_poiType1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_radius_light"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@drawable/text_view_selector"
+                android:textSize="@dimen/textSize_big" />
+
+            <TextView
+                android:id="@+id/tv_poiType2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_radius_light"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@drawable/text_view_selector"
+                android:textSize="@dimen/textSize_big" />
+
+            <TextView
+                android:id="@+id/tv_poiType3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_radius_light"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@drawable/text_view_selector"
+                android:textSize="@dimen/textSize_big" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38sp"
+        android:layout_marginTop="8sp"
+        android:layout_marginLeft="10sp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/album_dp_50"
+        android:visibility="visible"
+        android:elevation="@dimen/album_dp_1"
+        android:padding="@dimen/album_dp_1"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        <include layout="@layout/spinner"></include>
+
+        <com.maoyongxin.myapplication.server.widget.ClearWriteEditText
+            android:id="@+id/edit_poi_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="输入关键词查找企业"
+            android:textColor="@color/text_tips_color"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:textSize="@dimen/textSize_normal" />
+
+        <ImageView
+            android:id="@+id/img_doSearch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/sealtalk_search" />
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="10dp"
+    android:elevation="1dp"
+        android:background="#88ffffff"
+    >
+        <CheckBox
+            android:id="@+id/cus_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:theme="@style/My_CheckBox"
+            android:text="普通企业"
+            android:textSize="@dimen/textSize_normal"
+            android:textColor="@color/black_overlay"
+
+             />
+
+        <CheckBox
+            android:id="@+id/vip_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:theme="@style/My_CheckBox"
+            android:text="认证企业"
+            android:textSize="@dimen/textSize_normal"
+            android:textColor="@color/black_overlay"
+            />
+        <CheckBox
+            android:id="@+id/bison_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:theme="@style/My_CheckBox"
+            android:text="彼信会员"
+            android:textSize="@dimen/textSize_normal"
+            android:textColor="@color/black_overlay"
+            android:visibility="gone"
+             />
+
+
+    </LinearLayout>
+
+    <com.amap.api.maps.TextureMapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:transitionName="ditu_title">
+
+        <ImageView
+            android:id="@+id/img_centerAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/album_dp_4"
+            android:elevation="@dimen/album_dp_4"
+            android:paddingBottom="50dp"
+
+            android:src="@mipmap/icon_poi_add" />
+    </com.amap.api.maps.TextureMapView>
+
+
+
+
+
+    <Button
+        android:id="@+id/btn_showRoad"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_radius_bigrad_blue"
+        android:drawableLeft="@mipmap/icon_road_line"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="路线"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_poiResult"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:divider="#00000000"
+        android:background="@color/white"></ListView>
+
+</RelativeLayout>

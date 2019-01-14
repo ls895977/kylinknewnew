@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+
+        <com.maoyongxin.myapplication.tool.MyScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/white">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:orientation="vertical">
+
+
+                    <com.maoyongxin.myapplication.ui.widget.BannerView
+
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_alignParentBottom="true"
+                        android:background="#80000000"
+                        android:text="    麒麟头条|Uber将在美国开展共享单车业务"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize_bigger_dp" />
+                </RelativeLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_newGroup"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/zuzhi"
+                        android:gravity="center"
+                        android:text="商会"
+                        android:textColor="@color/text_tips_color"
+                        android:textSize="@dimen/textSize_small" />
+
+
+                    <TextView
+                        android:id="@+id/tv_outputGroup"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/zazhi"
+                        android:gravity="center"
+                        android:text="麒麟商业周刊"
+                        android:textColor="@color/text_tips_color"
+                        android:textSize="@dimen/textSize_small" />
+
+
+                    <TextView
+                        android:id="@+id/tv_recieveGroup"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/hezuo"
+                        android:gravity="center"
+                        android:text="采购/招标"
+                        android:textColor="@color/text_tips_color"
+                        android:textSize="@dimen/textSize_small" />
+
+
+                    <TextView
+                        android:id="@+id/tv_lastSeeGroup"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:drawableTop="@mipmap/jinnang"
+                        android:gravity="center"
+                        android:text="动态"
+                        android:textColor="@color/text_tips_color"
+                        android:textSize="@dimen/textSize_small" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#f8f8f8"
+
+                    ></View>
+                <LinearLayout
+                    android:id="@+id/remen_shanghui"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@color/white"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="麒麟专访"
+                                android:textStyle="bold"
+                                android:drawableLeft="@mipmap/shiping"
+                                android:layout_marginLeft="10dp"
+                                android:drawablePadding="10dp"
+                                android:layout_weight="1"
+                                android:textColor="@color/text_deco"
+                                />
+                            <TextView
+                                android:id="@+id/zfTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dp"
+                                android:textColor="@color/text_deco"
+                                android:text="2018-6-4"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/tozhuanfang"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginLeft="30dp"
+                                android:gravity="start"
+                                android:layout_weight="1">
+                                <TextView
+                                    android:id="@+id/zhuanfangTilte"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="职场教练余晟睿，教你如何进行商业谈判"
+                                    android:textStyle="bold"
+                                    android:layout_marginLeft="10dp"
+                                    android:textSize="@dimen/textSize_big"
+                                    android:layout_marginBottom="8dp"
+
+                                    />
+                                <TextView
+                                    android:id="@+id/zhuanfangSubTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="周一晚8点，学习合理体现自己的职场价值"
+
+                                    />
+
+                            </LinearLayout>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                               android:layout_weight="1"
+                                android:src="@drawable/arrow_right"
+                                android:layout_gravity="center_vertical"/>
+
+
+                        </LinearLayout>
+
+
+
+
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp"
+                            android:background="#f8f8f8"
+                            ></View>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="麒麟头条"
+
+                                android:textColor="@color/black_textview"
+                                android:textSize="@dimen/textSize_big"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/more_toutiao"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="查看更多"
+                                android:textSize="@dimen/textSize_normal"
+                                android:textColor="@color/text_deco"
+                                android:layout_marginRight="10dp"
+                                />
+
+
+                        </LinearLayout>
+
+                        <ListView
+                            android:id="@+id/news_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="230dp"
+
+                            android:background="@color/white"
+                            android:scrollbars="none"
+                            android:dividerHeight="0.68dp"></ListView>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="热门动态"
+
+                                android:textColor="@color/black_textview"
+                                android:textSize="@dimen/textSize_big"
+                                android:textStyle="bold" />
+
+
+
+                            <TextView
+                                android:id="@+id/more_dynamic"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="查看更多"
+                                android:textSize="@dimen/textSize_normal"
+                                android:textColor="@color/text_deco"
+                                android:layout_marginRight="10dp"
+                                />
+
+                        </LinearLayout>
+
+                        <com.maoyongxin.myapplication.ui.widget.mylistview.LoadListView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="280dp"
+                            android:background="@color/background"
+                            android:divider="@null"
+                            android:dividerHeight="0dp"
+                            android:visibility="gone"
+                            />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_gravity="center_vertical"
+                            android:id="@+id/dynmic_recycler"
+                            android:scrollbars="none"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"/>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="start"
+
+                                android:layout_weight="1"
+                                android:gravity="left"
+                                android:text="热门商会"
+
+                                android:textColor="@color/black_textview"
+                                android:textSize="@dimen/textSize_big"
+                                android:textStyle="bold" />
+                            <TextView
+                                android:id="@+id/changePopList"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="查看更多"
+                                android:textSize="@dimen/textSize_normal"
+                                android:textColor="@color/text_deco"
+                                android:layout_marginRight="10dp"
+                                />
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                    <ListView
+                        android:id="@+id/list_remen"
+                        android:layout_width="match_parent"
+                        android:layout_height="280dp"
+                        android:dividerHeight="0.68dp"
+                        android:background="@color/white"></ListView>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+        </com.maoyongxin.myapplication.tool.MyScrollView>
+
+        <LinearLayout
+            android:id="@+id/search_view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#00FFFFFF"
+            android:orientation="horizontal"
+            android:elevation="1dp"
+            >
+            <SearchView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="15dp"
+                android:background="#eeeeee"
+                android:id="@+id/sv_searchall"
+                android:transitionName="seachall"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

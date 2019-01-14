@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:id="@+id/all_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <TextView
+            android:id="@+id/huatiId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="htid"
+            android:textColor="@color/text_deco"
+            android:visibility="gone"
+            android:textSize="@dimen/textSize_small" />
+
+        <TextView
+        android:id="@+id/InfoType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="htid"
+        android:textColor="@color/text_deco"
+        android:visibility="gone"
+        android:textSize="@dimen/textSize_small" />
+
+        <TextView
+            android:id="@+id/userid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="htid"
+            android:textColor="@color/text_deco"
+            android:visibility="gone"
+            android:textSize="@dimen/textSize_small" />
+
+        <com.maoyongxin.myapplication.server.widget.SelectableRoundedImageView
+            android:id="@+id/img_huifuHead"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+
+            android:scaleType="centerCrop"
+            android:src="@mipmap/user_head_img"
+            app:sriv_left_bottom_corner_radius="15dip"
+            app:sriv_left_top_corner_radius="15dip"
+            app:sriv_right_bottom_corner_radius="15dip"
+            app:sriv_right_top_corner_radius="15dip"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="center_vertical"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="8dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+                <TextView
+                    android:id="@+id/tv_huifu_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="毛毛虫"
+                    android:textColor="@color/text_hint"
+                    android:textSize="@dimen/textSize_small"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_huifu_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:text="3小时前"
+                    android:textColor="@color/text_hint"
+                    android:textSize="@dimen/textSize_normal_dp"
+                    android:layout_marginRight="10dp"
+                     />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_huifu_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="2"
+                    android:text=""
+                    android:textColor="@color/blue_tiny"
+                    android:paddingTop="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/textSize_normal_dp"
+
+                    />
+                <io.github.rockerhieu.emojicon.EmojiconTextView
+
+                    android:id="@+id/tv_huifu_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:maxLines="2"
+                    android:text="这是回复内容"
+                    android:textColor="@color/text_normal"
+                    android:paddingTop="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/textSize_normal_dp"
+                    />
+                <io.github.rockerhieu.emojicon.EmojiconTextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:maxLines="2"
+                    android:text="这是回复内容"
+                    android:textColor="@color/text_normal"
+                    android:paddingTop="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/textSize_normal_dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="70dp"
+                android:visibility="gone"
+                >
+                <ImageButton
+                    android:id="@+id/ib_bad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@null"
+                    android:src="@mipmap/beded_big"
+                    android:focusable="false"/>
+                <TextView
+                    android:id="@+id/huifuCai"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="88"
+                    android:drawablePadding="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:background="@null"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/_30_alpha_black"
+                    android:textSize="@dimen/textSize_normal"
+                    />
+                <ImageButton
+                    android:id="@+id/ib_zan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:background="@null"
+                    android:src="@mipmap/good_big"
+                    android:focusable="false"/>
+                <TextView
+                    android:id="@+id/huifuZan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawablePadding="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/_30_alpha_black"
+                    android:text="99"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/textSize_normal"
+                    android:layout_marginRight="25dp"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/dele_huifu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除"
+                android:textSize="@dimen/textSize_small"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white_somoke"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="30dp"/>
+
+</LinearLayout>
+

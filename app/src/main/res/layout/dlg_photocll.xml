@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shaptop"
+        android:paddingBottom="@dimen/album_sp_20"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cancer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_10"
+                android:text="清除"
+                android:textColor="#d7b88a"
+                android:textSize="@dimen/fond_16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="@dimen/dp_10"
+                android:text="筛选"
+                android:textColor="#5c5c5c"
+                android:textSize="@dimen/fond_16sp" />
+
+            <TextView
+                android:id="@+id/center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/dp_10"
+                android:text="确认"
+                android:textColor="#d7b88a"
+                android:textSize="@dimen/fond_16sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/album_dp_15"
+            android:text="地区"
+            android:textColor="#5c5c5c"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/album_dp_10">
+
+            <TextView
+                android:id="@+id/add1"
+                android:layout_width="75dip"
+                android:layout_height="30dip"
+                android:layout_marginLeft="@dimen/album_dp_10"
+                android:background="@drawable/boder_circular"
+                android:gravity="center"
+                android:text="成都"
+                android:textColor="@drawable/tv_gridveiwselector"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/add2"
+                android:layout_width="75dip"
+                android:layout_height="30dip"
+                android:layout_marginLeft="@dimen/album_dp_10"
+                android:background="@drawable/boder_circular"
+                android:gravity="center"
+                android:text="不限地区"
+                android:textColor="@drawable/tv_gridveiwselector"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/album_dp_15"
+            android:paddingTop="@dimen/album_dp_10"
+            android:text="时间"
+            android:textColor="#5c5c5c"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/album_dp_10">
+
+            <TextView
+                android:id="@+id/time_1"
+                android:layout_width="75dip"
+                android:layout_height="30dip"
+                android:layout_marginLeft="@dimen/album_dp_10"
+                android:background="@drawable/boder_circular"
+                android:gravity="center"
+                android:text="一年以上"
+                android:textColor="@drawable/tv_gridveiwselector"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/time_2"
+                android:layout_width="75dip"
+                android:layout_height="30dip"
+                android:layout_marginLeft="@dimen/album_dp_10"
+                android:background="@drawable/boder_circular"
+                android:gravity="center"
+                android:text="不限时间"
+                android:textColor="@drawable/tv_gridveiwselector"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,234 @@
+{
+  "category": [
+    "社会",
+    "国内",
+    "国外",
+    "娱乐",
+    "休息视频",
+    "重点新闻"
+  ],
+  "error": false,
+  "results": {
+    "社会": [
+      {
+        "id": "572de80967765974fbfcfa26",
+        "createdAt": "2016-05-07T21:05:13.133Z",
+        "desc": "Fragment完全解析三步曲",
+        "publishedAt": "2016-05-11T12:11:48.690Z",
+        "source": "chrome",
+        "type": "社会",
+        "url": "http://www.jianshu.com/p/d9143a92ad94",
+        "used": true,
+        "who": "AndWang"
+      },
+      {
+        "id": "57302b1767765974f885c038",
+        "createdAt": "2016-05-09T14:15:51.389Z",
+        "desc": "送给小白的设计说明书",
+        "publishedAt": "2016-05-11T12:11:48.690Z",
+        "source": "web",
+        "type": "社会",
+        "url": "http://blog.csdn.net/dd864140130/article/details/51313342",
+        "used": true,
+        "who": "Dong dong Liu"
+      },
+      {
+        "id": "5730301067765974f5e27ebe",
+        "createdAt": "2016-05-09T14:37:04.633Z",
+        "desc": "Material 风格的干货客户端",
+        "publishedAt": "2016-05-11T12:11:48.690Z",
+        "source": "web",
+        "type": "社会",
+        "url": "http://www.jcodecraeer.com/a/anzhuokaifa/2016/0508/4222.html",
+        "used": true,
+        "who": null
+      },
+      {
+        "id": "5730504767765974fbfcfa3b",
+        "createdAt": "2016-05-09T16:54:31.482Z",
+        "desc": "可定制的Indicator,结合ViewPager使用",
+        "publishedAt": "2016-05-11T12:11:48.690Z",
+        "source": "chrome",
+        "type": "社会",
+        "url": "https://github.com/jiang111/ScalableTabIndicator",
+        "used": true,
+        "who": "NewTab"
+      },
+      {
+        "id": "5730672b67765974fca83130",
+        "createdAt": "2016-05-09T18:32:11.195Z",
+        "desc": "T-MVP：泛型深度解耦下的MVP大瘦身",
+        "publishedAt": "2016-05-11T12:11:48.690Z",
+        "source": "web",
+        "type": "社会",
+        "url": "https://github.com/north2014/T-MVP",
+        "used": true,
+        "who": "Bai xiaokang"
+      },
+      {
+        "id": "5731d51567765974f885c052",
+        "createdAt": "2016-05-10T20:33:25.264Z",
+        "desc": "Simple Android SharedPreferences wrapper",
+        "publishedAt": "2016-05-11T12:11:48.690Z",
+        "source": "chrome",
+        "type": "社会",
+        "url": "https://github.com/GrenderG/Prefs",
+        "used": true,
+        "who": "蒋朋"
+      },
+      {
+        "id": "5731eb9467765974f5e27ed5",
+        "createdAt": "2016-05-10T22:09:24.76Z",
+        "desc": "IntelliJ plugin for supporting PermissionsDispatcher",
+        "publishedAt": "2016-05-11T12:11:48.690Z",
+        "source": "chrome",
+        "type": "社会",
+        "url": "https://github.com/shiraji/permissions-dispatcher-plugin",
+        "used": true,
+        "who": "蒋朋"
+      }
+    ],
+    "国内": [
+      {
+        "id": "572c260867765974fca83110",
+        "createdAt": "2016-05-06T13:05:12.688Z",
+        "desc": "别人的 App 不好用？自己改了便是。Moves 篇（上）",
+        "publishedAt": "2016-05-11T12:11:48.690Z",
+        "source": "api",
+        "type": "国外",
+        "url": "http://mp.weixin.qq.com/s?__biz=MzIwMTYzMzcwOQ==&mid=2650948304&idx=1&sn=f76e7b765a7fcabcb71d37052b46e489&scene=0#wechat_redirect",
+        "used": true,
+        "who": "tripleCC"
+      },
+      {
+        "id": "5731894967765974fca8313d",
+        "createdAt": "2016-05-10T15:10:01.411Z",
+        "desc": "网易云信iOS UI组件源码仓库",
+        "publishedAt": "2016-05-11T12:11:48.690Z",
+        "source": "chrome",
+        "type": "国外",
+        "url": "https://github.com/netease-im/NIM_iOS_UIKit",
+        "used": true,
+        "who": "__weak_Point"
+      },
+      {
+        "id": "5732ad4467765974f5e27edb",
+        "createdAt": "2016-05-11T11:55:48.505Z",
+        "desc": "OpenShop 开源",
+        "publishedAt": "2016-05-11T12:11:48.690Z",
+        "source": "chrome",
+        "type": "国内",
+        "url": "https://github.com/openshopio/openshop.io-ios",
+        "used": true,
+        "who": "代码家"
+      },
+      {
+        "id": "5732ad5d67765974fbfcfa51",
+        "createdAt": "2016-05-11T11:56:13.411Z",
+        "desc": "Swift 实现的 OCR 识别库",
+        "publishedAt": "2016-05-11T12:11:48.690Z",
+        "source": "chrome",
+        "type": "国内",
+        "url": "https://github.com/garnele007/SwiftOCR",
+        "used": true,
+        "who": "代码家"
+      },
+      {
+        "id": "5732aec667765974f885c057",
+        "createdAt": "2016-05-11T12:02:14.220Z",
+        "desc": "让你的微信不再被人撤回消息",
+        "publishedAt": "2016-05-11T12:11:48.690Z",
+        "source": "chrome",
+        "type": "国内",
+        "url": "http://yulingtianxia.com/blog/2016/05/06/Let-your-WeChat-for-Mac-never-revoke-messages/",
+        "used": true,
+        "who": "CallMeWhy"
+      },
+      {
+        "id": "5732aee867765974f885c058",
+        "createdAt": "2016-05-11T12:02:48.262Z",
+        "desc": "微信双开还是微信定时炸弹？",
+        "publishedAt": "2016-05-11T12:11:48.690Z",
+        "source": "chrome",
+        "type": "国内",
+        "url": "http://drops.wooyun.org/mobile/15406",
+        "used": true,
+        "who": "CallMeWhy"
+      }
+    ],
+    "国外": [
+      {
+        "id": "5732007267765974fbfcfa4a",
+        "createdAt": "2016-05-10T23:38:26.522Z",
+        "desc": "秒拍牛人大合集，[笑cry]目测膝盖根本不够用啊。",
+        "publishedAt": "2016-05-11T12:11:48.690Z",
+        "source": "chrome",
+        "type": "国外",
+        "url": "http://weibo.com/p/2304443956b04478364a64185f196f0a89266d",
+        "used": true,
+        "who": "LHF"
+      }
+    ],
+    "休息视频": [
+      {
+        "id": "5720447067765974f885bfa6",
+        "createdAt": "2016-04-27T12:47:44.433Z",
+        "desc": "详细介绍了java jvm 垃圾回收相关的知识汇总",
+        "publishedAt": "2016-05-11T12:11:48.690Z",
+        "source": "web",
+        "type": "休息视频",
+        "url": "http://www.wxtlife.com/2016/04/25/java-jvm-gc/",
+        "used": true,
+        "who": "Aaron"
+      },
+      {
+        "id": "57204de567765974f5e27e2b",
+        "createdAt": "2016-04-27T13:28:05.183Z",
+        "desc": "使用GPG签名Git提交和标签",
+        "publishedAt": "2016-05-11T12:11:48.690Z",
+        "source": "chrome",
+        "type": "休息视频",
+        "url": "http://arondight.me/2016/04/17/%E4%BD%BF%E7%94%A8GPG%E7%AD%BE%E5%90%8DGit%E6%8F%90%E4%BA%A4%E5%92%8C%E6%A0%87%E7%AD%BE/",
+        "used": true,
+        "who": "蒋朋"
+      }
+    ],
+    "娱乐": [
+      {
+        "id": "5724d74e67765974fca830d0",
+        "createdAt": "2016-05-01T00:03:26.602Z",
+        "desc": "阻碍新手程序员提升的8件小事",
+        "publishedAt": "2016-05-11T12:11:48.690Z",
+        "source": "chrome",
+        "type": "娱乐",
+        "url": "http://www.kuqin.com/shuoit/20151201/349267.html",
+        "used": true,
+        "who": "LHF"
+      },
+      {
+        "id": "5732033c67765974fbfcfa4b",
+        "createdAt": "2016-05-10T23:50:20.936Z",
+        "desc": "程序员、黑客与开发者之别",
+        "publishedAt": "2016-05-11T12:11:48.690Z",
+        "source": "chrome",
+        "type": "娱乐",
+        "url": "http://36kr.com/p/5046775.html",
+        "used": true,
+        "who": "LHF"
+      }
+    ],
+    "重点新闻": [
+      {
+        "id": "5732b0bc67765974f5e27edd",
+        "createdAt": "2016-05-11T12:10:36.258Z",
+        "desc": "511",
+        "publishedAt": "2016-05-11T12:12:08.55Z",
+        "source": "chrome",
+        "type": "重点新闻",
+        "url": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1521999934403&di=c807ef2dbb0afb2415983695d67306b4&imgtype=0&src=http%3A%2F%2Fwww.tenda.com.cn%2Fnewspic%2F20170103%2Fn2kjlk5yucp.jpg",
+        "used": true,
+        "who": "daimajai"
+      }
+    ]
+  }
+}

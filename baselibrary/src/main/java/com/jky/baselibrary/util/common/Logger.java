@@ -1,0 +1,52 @@
+package com.jky.baselibrary.util.common;
+
+import android.util.Log;
+
+import com.jky.baselibrary.LibConfig;
+
+public class Logger {
+    private static final int LEVEL_D = 0;
+    private static final int LEVEL_I = 1;
+    private static final int LEVEL_W = 2;
+    private static final int LEVEL_E = 3;
+
+    public static void d(String tag, String msg) {
+        log(LEVEL_D, tag, msg);
+    }
+
+    public static void i(String tag, String msg) {
+        log(LEVEL_I, tag, msg);
+    }
+
+    public static void w(String tag, String msg) {
+        log(LEVEL_W, tag, msg);
+    }
+
+    public static void e(String tag, String msg) {
+        log(LEVEL_E, tag, msg);
+    }
+
+    private static void log(int level, String tag, String msg) {
+        if (!LibConfig.isDebug())
+            return;
+
+        switch (level) {
+            case LEVEL_D: {
+                Log.d(tag, msg);
+                break;
+            }
+            case LEVEL_I: {
+                Log.i(tag, msg);
+                break;
+            }
+            case LEVEL_W: {
+                Log.w(tag, msg);
+                break;
+            }
+            case LEVEL_E: {
+                Log.e(tag, msg);
+                break;
+            }
+        }
+    }
+}

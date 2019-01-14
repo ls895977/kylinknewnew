@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_navi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_marginBottom="@dimen/album_dp_4"
+    tools:context="com.maoyongxin.myapplication.tool.NaviActivity"
+   >
+<com.maoyongxin.myapplication.ui.widget.SwipeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="@dimen/album_dp_10"
+        android:background="@mipmap/mingpian1"
+        android:elevation="@dimen/album_dp_4"
+
+        android:orientation="vertical"
+        >
+        <TextView
+
+            android:id="@+id/companyName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:layout_marginTop="5sp"
+            android:text="企业名字:"
+            android:textColor="@color/blue_title"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:maxLines="1"></TextView>
+
+
+        <TextView
+            android:id="@+id/bossName"
+            android:layout_width="339dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:gravity="center"
+            android:text="联系人"
+            android:textColor="@color/blue_title"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/zhiwei"
+            android:layout_width="133dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginLeft="@dimen/album_dp_10"
+            android:gravity="right"
+            android:text="职位"
+            android:textSize="10dp" />
+
+
+        <LinearLayout
+            android:layout_width="273dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/album_dp_6"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="@dimen/album_dp_15"
+
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/tele" />
+
+            <TextView
+                android:id="@+id/tel_number"
+                android:layout_width="252dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="@dimen/album_dp_4"
+                android:text=""
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="278dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/album_dp_6"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="@dimen/album_dp_15"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/email" />
+
+            <TextView
+                android:id="@+id/emaill"
+                android:layout_width="252dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/album_dp_4"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/album_dp_6"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="@dimen/album_dp_15"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/webadress" />
+
+            <TextView
+                android:id="@+id/webadress"
+                android:layout_width="252dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/album_dp_4"
+                android:textColor="@color/gray"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+        <ScrollView
+            android:id="@+id/ZhuYin_Scroll"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+            <LinearLayout
+                android:id="@+id/ZhuYin_linear"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/businessScope"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="@dimen/album_dp_15"
+                    android:layout_marginRight="@dimen/album_dp_15"
+                    android:layout_marginBottom="@dimen/album_dp_1"/>
+            </LinearLayout>
+
+
+
+        </ScrollView>
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="50dp"
+    android:layout_height="wrap_content"
+     android:orientation="vertical">
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/blue_title"
+        android:textColor="@color/white"
+        android:text="置顶"/>
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/ORANGE"
+        android:textColor="@color/white"
+        android:text="分享"/>
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/def_sub_1_pink"
+        android:textColor="@color/white"
+        android:id="@+id/bt_deleteMingpian"
+        android:text="删除"/>
+
+</LinearLayout>
+
+</com.maoyongxin.myapplication.ui.widget.SwipeLayout>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/WHITE"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:padding="11dp"
+        android:gravity="center_vertical"
+        android:id="@+id/line_myRequest_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.maoyongxin.myapplication.server.widget.SelectableRoundedImageView
+            android:id="@+id/img_requestUserHead"
+            android:src="@mipmap/user_head_img"
+            android:scaleType="centerCrop"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:sriv_left_bottom_corner_radius="25dp"
+            app:sriv_right_top_corner_radius="25dp"
+            app:sriv_right_bottom_corner_radius="25dp"
+            app:sriv_left_top_corner_radius="25dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_requestUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="毛毛虫"
+                android:textColor="@color/def_text_1"
+                android:textSize="@dimen/textSize_big" />
+
+            <TextView
+                android:id="@+id/tv_list_data"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingBottom="5dp"
+                android:text="我是某某"
+                android:textColor="@color/def_text_3"
+                android:textSize="@dimen/textSize_normal" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tv_list_state"
+            android:layout_width="60dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_radius_blue"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="已发送"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_normal" />
+        <Button
+            android:id="@+id/btn_accept"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_radius_blue_tiny"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="接受"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="unit_distance_km" translatable="false">km</string>
+    <string name="unit_distance_m" translatable="false">m</string>
+    <string name="unit_time_clock" translatable="false">时</string>
+    <string name="unit_time_minute" translatable="false">分</string>
+    <string name="unit_rmb_yuan" translatable="false">元</string>
+    <string name="unit_rmb" translatable="false">￥</string>
+</resources>

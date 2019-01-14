@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="constellations" translatable="false">
+        <item>白羊座</item>
+        <item>金牛座</item>
+        <item>双子座</item>
+        <item>巨蟹座</item>
+        <item>狮子座</item>
+        <item>处女座</item>
+        <item>天秤座</item>
+        <item>天蝎座</item>
+        <item>射手座</item>
+        <item>摩羯座</item>
+        <item>水瓶座</item>
+        <item>双鱼座</item>
+    </string-array>
+    <color name="BLACK">#000000</color>
+    <color name="BLUE">#0000ff</color>
+    <color name="GRAY">#808080</color>
+    <color name="GREEN">#00ff00</color>
+    <color name="LIGHT_GRAY">#a0a0a0</color>
+    <color name="ORANGE">#ff9114</color>
+    <color name="RED">#ff0000</color>
+    <color name="SMALL_GRAY">#C8D5E5</color>
+    <color name="TRANSPARENT">#00000000</color>
+    <color name="WHITE">#ffffff</color>
+    <color name="bantransparent">#60000000</color>
+    <color name="blue_micro">#eff7fe</color>
+    <color name="blue_title">#3381CC</color>
+    <declare-styleable name="AdsBanner"><attr format="dimension|reference" name="bannerHeight"/><attr format="boolean" name="matchParentHeight"/><attr format="boolean" name="autoPager"/><attr format="integer" name="autoPagerMillis"/><attr format="boolean" name="showIndicator"/><attr name="setIndicatorGravity">
+            <flag name="left" value="-1"/>
+            <flag name="center" value="0"/>
+            <flag name="right" value="1"/>
+        </attr><attr format="reference" name="setIndicatorSelector"/><attr format="boolean" name="showText"/><attr name="setTextGravity">
+            <flag name="left" value="-1"/>
+            <flag name="center" value="0"/>
+            <flag name="right" value="1"/>
+        </attr><attr format="integer" name="setTextSize"/><attr format="color|reference" name="setTextColor"/><attr format="color|reference" name="setTextBackgroundColor"/></declare-styleable>
+    <declare-styleable name="TitleBar"><attr format="dimension" name="height"/><attr format="color|reference" name="backgroundColor"/><attr format="string|reference" name="textCenter"/><attr format="integer" name="textSizeCenter"/><attr format="color|reference" name="textColorCenter"/><attr format="reference" name="iconCenter"/><attr format="string|reference" name="textLeft"/><attr format="integer" name="textSizeLeft"/><attr format="color|reference" name="textColorLeft"/><attr format="reference" name="textBackgroundLeft"/><attr format="dimension|reference" name="textLeftMarginLeft"/><attr format="reference" name="iconLeft"/><attr format="dimension|reference" name="iconLeftMarginLeft"/><attr format="reference" name="iconBackgroundLeft"/><attr format="string|reference" name="textRight"/><attr format="integer" name="textSizeRight"/><attr format="color|reference" name="textColorRight"/><attr format="reference" name="textBackgroundRight"/><attr format="dimension|reference" name="textRightMarginRight"/><attr format="reference" name="iconRight"/><attr format="dimension|reference" name="iconRightMarginRight"/><attr format="reference" name="iconBackgroundRight"/><attr format="boolean" name="backFunction"/><attr format="reference" name="iconBack"/><attr format="boolean" name="underline"/><attr format="dimension" name="underlineHeight"/><attr format="color|reference" name="underlineColor"/><attr name="function">
+            <flag name="iconLeft" value="1"/>
+            <flag name="textLeft" value="2"/>
+            <flag name="iconCenter" value="4"/>
+            <flag name="textCenter" value="8"/>
+            <flag name="iconRight" value="16"/>
+            <flag name="textRight" value="32"/>
+        </attr></declare-styleable>
+    <dimen name="TitleBar_Height">48dp</dimen>
+    <dimen name="TitleBar_Stroke">0.67dp</dimen>
+    <string name="account_kicked" translatable="false">账号在别处登录</string>
+    <string name="age" translatable="false">年龄</string>
+    <string name="agree" translatable="false">同意</string>
+    <string name="all" translatable="false">全部</string>
+    <string name="auto_login" translatable="false">自动登录</string>
+    <string name="back" translatable="false">返回</string>
+    <string name="birthday" translatable="false">生日</string>
+    <string name="camera_deny_dialog" translatable="false">App没有获得【摄像权限】，相关功能无法正常进行</string>
+    <string name="camera_rationale" translatable="false">请授予App【摄像权限】，以便您可以正常使用相关功能与服务</string>
+    <string name="cancel" translatable="false">取消</string>
+    <string name="chat" translatable="false">聊天</string>
+    <string name="commit" translatable="false">提交</string>
+    <string name="confirm" translatable="false">确认</string>
+    <string name="confirm2" translatable="false">确定</string>
+    <string name="contacts_deny_dialog" translatable="false">App没有获得麦【通讯录权限】，相关功能无法正常进行</string>
+    <string name="contacts_rationale" translatable="false">请授予App【通讯录权限】，以便您可以正常使用相关功能与服务</string>
+    <string name="day" translatable="false">日</string>
+    <string name="dayAfterTomorrow" translatable="false">后天</string>
+    <string name="default_rationale_dialog_text" translatable="false">App需要您的授权</string>
+    <string name="delete" translatable="false">删除</string>
+    <string name="desc" translatable="false">说明</string>
+    <string name="done" translatable="false">完成</string>
+    <string name="error_chat_self" translatable="false">不能和自己聊天</string>
+    <string name="error_http" translatable="false">网络请求错误</string>
+    <string name="error_logical" translatable="false">逻辑错误</string>
+    <string name="error_server" translatable="false">服务器错误</string>
+    <string name="error_unknown" translatable="false">未知错误</string>
+    <string name="female" translatable="false">女</string>
+    <string name="gender" translatable="false">性别</string>
+    <string name="ijou" translatable="false">以上</string>
+    <string name="last_step" translatable="false">上一步</string>
+    <string name="level" translatable="false">等级</string>
+    <string name="local_photo" translatable="false">照片选择</string>
+    <string name="local_video" translatable="false">本地视频</string>
+    <string name="locating" translatable="false">定位中</string>
+    <string name="locating_failed" translatable="false">定位失败</string>
+    <string name="location" translatable="false">位置</string>
+    <string name="location_deny_dialog" translatable="false">App没有获得【定位权限】，相关功能无法正常进行</string>
+    <string name="location_now" translatable="false">当前位置</string>
+    <string name="location_rationale" translatable="false">请授予App【定位权限】，以便您可以正常使用相关功能与服务</string>
+    <string name="login" translatable="false">登录</string>
+    <string name="login_cancelled" translatable="false">登录取消</string>
+    <string name="login_failure" translatable="false">登录失败</string>
+    <string name="login_ing" translatable="false">登录中</string>
+    <string name="login_success" translatable="false">登录成功</string>
+    <string name="male" translatable="false">男</string>
+    <string name="mic_deny_dialog" translatable="false">App没有获得【麦克风权限】，相关功能无法正常进行</string>
+    <string name="mic_rationale" translatable="false">请授予App【麦克风权限】，以便您可以正常使用相关功能与服务</string>
+    <string name="month" translatable="false">月</string>
+    <string name="next_step" translatable="false">下一步</string>
+    <string name="nickname" translatable="false">昵称</string>
+    <string name="now" translatable="false">现在</string>
+    <string name="oauth" translatable="false">授权</string>
+    <string name="oauth_cancelled" translatable="false">授权取消</string>
+    <string name="oauth_failure" translatable="false">授权失败</string>
+    <string name="oauth_success" translatable="false">授权成功</string>
+    <string name="password" translatable="false">密码</string>
+    <string name="phone_deny_dialog" translatable="false">App没有获得麦【电话权限】，相关功能无法正常进行</string>
+    <string name="phone_number" translatable="false">手机号码</string>
+    <string name="phone_rationale" translatable="false">请授予App【电话权限】，以便您可以正常使用相关功能与服务</string>
+    <string name="processing" translatable="false">处理中</string>
+    <string name="register" translatable="false">注册</string>
+    <string name="save" translatable="false">保存</string>
+    <string name="search" translatable="false">搜索</string>
+    <string name="share" translatable="false">分享</string>
+    <string name="share_cancelled" translatable="false">分享取消</string>
+    <string name="share_failure" translatable="false">分享失败</string>
+    <string name="share_success" translatable="false">分享成功</string>
+    <string name="skip" translatable="false">跳过</string>
+    <string name="start" translatable="false">开始</string>
+    <string name="storage_deny_dialog" translatable="false">App没有获得【存储权限】，相关功能无法正常进行</string>
+    <string name="storage_rationale" translatable="false">请授予App【存储权限】，以便您可以正常使用相关功能与服务</string>
+    <string name="symbol_colon" translatable="false">：</string>
+    <string name="tag" translatable="false">标签</string>
+    <string name="take_photo" translatable="false">拍照</string>
+    <string name="take_video" translatable="false">拍摄</string>
+    <string name="today" translatable="false">今天</string>
+    <string name="tomorrow" translatable="false">明天</string>
+    <string name="unit_distance_km" translatable="false">km</string>
+    <string name="unit_distance_m" translatable="false">m</string>
+    <string name="unit_rmb" translatable="false">￥</string>
+    <string name="unit_rmb_yuan" translatable="false">元</string>
+    <string name="unit_time_clock" translatable="false">时</string>
+    <string name="unit_time_minute" translatable="false">分</string>
+    <string name="user_nickname" translatable="false">用户昵称</string>
+    <string name="verify_code" translatable="false">验证码</string>
+    <string name="week" translatable="false">周</string>
+    <string name="x_days_ago" translatable="false">天前</string>
+    <string name="x_hours_ago" translatable="false">小时前</string>
+    <string name="x_minutes_ago" translatable="false">分钟前</string>
+    <string name="x_years_ago" translatable="false">年前</string>
+    <string name="year" translatable="false">年</string>
+    <string name="yesterday" translatable="false">昨天</string>
+</resources>

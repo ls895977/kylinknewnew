@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/WHITE">
+
+    <TextView
+        android:id="@+id/select_dialog_tv_title_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="16dp"
+        android:text="@string/cancel"
+        android:textColor="@color/text_heavy"
+        android:textSize="@dimen/textSize_normal"/>
+
+    <TextView
+        android:id="@+id/select_dialog_tv_title_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/text_heavy"
+        android:textSize="@dimen/textSize_big"
+        tools:text="标题"/>
+
+    <TextView
+        android:id="@+id/select_dialog_tv_title_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="16dp"
+        android:text="@string/confirm2"
+        android:textColor="@color/main_theme"
+        android:textSize="@dimen/textSize_normal"/>
+</RelativeLayout>

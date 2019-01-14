@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maoyongxin.myapplication.ui.Getstranger.Getstanger">
+<fragment
+    android:id="@+id/getStranger"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:name="com.maoyongxin.myapplication.ui.editapp.findfragment.StrangerFragment">
+
+</fragment>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <FrameLayout
+        android:id="@+id/de_frm_backgroud"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.maoyongxin.myapplication.server.widget.SelectableRoundedImageView
+            android:id="@+id/igheadview"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:elevation="3dp"
+            android:src="@mipmap/app_icon"
+            android:transitionName="imghead"
+            app:sriv_left_bottom_corner_radius="50dp"
+            app:sriv_left_top_corner_radius="50dp"
+            app:sriv_right_bottom_corner_radius="50dp"
+            app:sriv_right_top_corner_radius="50dp"
+
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:orientation="vertical"
+            android:paddingLeft="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="嗨，恭喜"
+                android:textColor="@color/blue_tiny"
+                android:textSize="@dimen/textSize_max" />
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_radius_blue_tiny" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="欢迎加入彼信商业社区" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/main_theme"
+                android:orientation="vertical"
+                android:visibility="gone"></LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/de_img_backgroud"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginRight="-500dp"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:gravity="bottom">
+
+            <ImageView
+                android:id="@+id/de_login_logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/wellcome_logo" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/de_login_logo"
+                android:layout_marginTop="5dp"
+                android:background="#00ffffff"
+                android:gravity="center"
+                android:text="kirin Business"
+                android:textColor="@color/white"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/de_login_forgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="15dp"
+        android:text="@string/forgot_password"
+        android:textColor="#0195ff"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/liner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:layout_marginRight="30dip"
+                android:orientation="horizontal">
+
+                <com.maoyongxin.myapplication.server.widget.ClearWriteEditText
+                    android:id="@+id/de_login_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rc_corner_style"
+
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="账号"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:maxLines="1"
+
+                    android:paddingLeft="20dip"
+                    android:paddingTop="6dp"
+                    android:paddingRight="10dip"
+                    android:paddingBottom="6dp"
+
+                    android:textColor="@color/group_list_gray"
+                    android:textColorHint="@color/group_list_gray"
+                    android:textCursorDrawable="@drawable/course_white"
+                    android:transitionName="tv_transname"
+
+                    />
+
+                <FrameLayout
+                    android:id="@+id/fr_username_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/de_login_phone"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone">
+
+                </FrameLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/liner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dip"
+                android:layout_marginTop="20dip"
+                android:layout_marginRight="30dip"
+                android:orientation="horizontal">
+
+
+                <com.maoyongxin.myapplication.server.widget.ClearWriteEditText
+                    android:id="@+id/de_login_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/rc_corner_style"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+
+                    android:paddingLeft="20dip"
+                    android:paddingTop="6dp"
+                    android:paddingRight="10dip"
+                    android:paddingBottom="6dp"
+
+                    android:textColor="@color/group_list_gray"
+                    android:textColorHint="@color/group_list_gray"
+                    android:textCursorDrawable="@drawable/course_white"
+                    android:transitionName="tv_psw"
+
+                    />
+
+                <FrameLayout
+                    android:id="@+id/fr_pass_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/de_login_password"
+                    android:layout_centerVertical="true"
+                    android:visibility="gone">
+
+                </FrameLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dip"
+                android:layout_marginTop="30dip"
+                android:layout_marginRight="40dip"
+                android:background="@drawable/bg_radius_blue_tiny"
+                android:padding="3dp"
+                android:transitionName="bt_reg">
+
+                <com.maoyongxin.myapplication.ui.NbButton
+                    android:id="@+id/de_login_sign"
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/bg_radius_blue_tiny"
+                    android:text="@string/Login"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:padding="@dimen/dip_5">
+
+                <ImageView
+                    android:id="@+id/de_login_wx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dip_10"
+                    android:background="@mipmap/icon_wx" />
+
+                <ImageView
+                    android:id="@+id/de_login_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dip_10"
+                    android:background="@mipmap/icon_qq" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/de_login_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:paddingTop="@dimen/dip_10"
+                android:gravity="center_horizontal"
+                android:text="@string/new_user"
+                android:textColor="@color/blue_tiny"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

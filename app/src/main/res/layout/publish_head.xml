@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <com.maoyongxin.myapplication.ui.news.activity.BannerLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_margin="5dp"
+        android:elevation="1dp"
+        app:defaultImage="@mipmap/ic_launcher"
+        app:indicatorMargin="10dp"
+        app:indicatorShape="oval"
+        app:indicatorSpace="2dp"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:scrollDuration="1100"
+        android:background="@color/white"
+        app:selectedIndicatorHeight="6dp"
+        app:selectedIndicatorWidth="6dp"
+        app:titleColor="#ffffff"
+
+        app:unSelectedIndicatorHeight="6dp"
+        app:unSelectedIndicatorWidth="6dp"
+        android:id="@+id/publishBanner"
+        ></com.maoyongxin.myapplication.ui.news.activity.BannerLayout>
+
+
+</LinearLayout>

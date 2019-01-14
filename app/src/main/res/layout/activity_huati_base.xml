@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:emojicon="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="4dp"
+            android:src="@mipmap/icon_back" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="发布话题"
+            android:textColor="@color/text_black_color"
+            android:textSize="@dimen/textSize_bigger" />
+
+        <Button
+            android:id="@+id/btfabu"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/album_dp_4"
+            android:background="@drawable/bg_radius_blue_tiny"
+            android:text="发  布"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/ed_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/album_dp_15"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入标题..."
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/dele_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/album_dp_15"
+            android:src="@mipmap/icon_dele" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.67dp"
+        android:layout_margin="@dimen/album_dp_6"
+        android:background="@color/text_hint"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        android:background="@color/white">
+
+        <com.maoyongxin.myapplication.server.widget.ClearWriteEditText
+            android:id="@+id/edit_fabu_content"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_margin="5dp"
+            android:background="@color/white_somoke"
+            android:gravity="start"
+            android:hint="分享新鲜事..."
+            android:padding="@dimen/album_dp_15"
+            android:textColor="@color/text_normal"
+            android:textColorHint="@color/def_sub_2_yellow"
+            android:textSize="@dimen/textSize_normal" />
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/emoj_view"
+            android:background="@color/white_somoke"
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+
+            <io.github.rockerhieu.emojicon.EmojiconEditText
+                android:background="@color/white_somoke"
+                android:id="@+id/editemoj"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_margin="5dp"
+                android:gravity="top"
+                android:hint="分享新鲜事..."
+                android:padding="@dimen/album_dp_15"
+                android:textColor="@color/text_normal"
+                android:textColorHint="@color/def_sub_2_yellow"
+
+                emojicon:emojiconSize="@dimen/textSize_normal" />
+
+            <RelativeLayout
+                android:id="@+id/emoj_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:padding="10dp">
+                <ImageView
+
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@mipmap/ab1" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/edit_fabu_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_fabu_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+
+
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/bg_radius_light"
+                android:drawableLeft="@mipmap/location_yellow"
+                android:drawablePadding="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="成都"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/textSize_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+
+                android:background="@drawable/bg_radius_light"
+                android:drawableLeft="@mipmap/earth"
+                android:drawablePadding="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:singleLine="true"
+                android:text="公开"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/textSize_normal"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="60dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="匿名发布"
+                android:textColor="@color/def_sub_2_yellow" />
+
+            <com.maoyongxin.myapplication.ui.widget.switchbutton.SwitchButton
+                android:id="@+id/strangeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+
+
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/take_pic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/group_list_liner"
+            android:elevation="3dp"
+            android:src="@mipmap/icon_takepicutre" />
+
+        <ImageView
+            android:id="@+id/im_showImg"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:visibility="invisible"
+            android:id="@+id/emoj"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

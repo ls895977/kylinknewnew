@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.maoyongxin.myapplication.ui.regesite_headimg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <com.maoyongxin.myapplication.server.widget.SelectableRoundedImageView
+            android:id="@+id/headimg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            app:sriv_left_bottom_corner_radius="50dp"
+            app:sriv_right_top_corner_radius="50dp"
+            app:sriv_right_bottom_corner_radius="50dp"
+            app:sriv_left_top_corner_radius="50dp"
+            android:src="@mipmap/user_head_img"
+            android:elevation="3dp"
+            android:scaleType="centerInside"
+
+            />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设置头像"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="一句话介绍："
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/SMALL_GRAY"/>
+        <EditText
+            android:id="@+id/user_resource"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/white_somoke"
+            android:layout_margin="10dp"
+            android:gravity="start"
+            android:lines="2"
+            android:maxLength="40"
+            android:hint="当其他用户需要查找资源的时候，本内容会被优先匹配（20字以内）"
+            android:textSize="@dimen/textSize_small"
+            android:textColorHint="@color/SMALL_GRAY"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/dologin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进入彼信"
+        android:background="@drawable/bg_radius_blue_tiny"
+        android:layout_gravity="center_horizontal|bottom"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:clickable="false"
+
+        />
+
+</FrameLayout>

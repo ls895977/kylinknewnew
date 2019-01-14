@@ -1,0 +1,85 @@
+<resources>
+    <string name="confirm" translatable="false">确认</string>
+    <string name="confirm2" translatable="false">确定</string>
+    <string name="start" translatable="false">开始</string>
+    <string name="cancel" translatable="false">取消</string>
+    <string name="login" translatable="false">登录</string>
+    <string name="auto_login" translatable="false">自动登录</string>
+    <string name="account_kicked" translatable="false">账号在别处登录</string>
+    <string name="processing" translatable="false">处理中</string>
+    <string name="login_ing" translatable="false">登录中</string>
+    <string name="locating" translatable="false">定位中</string>
+    <string name="locating_failed" translatable="false">定位失败</string>
+    <string name="location" translatable="false">位置</string>
+    <string name="location_now" translatable="false">当前位置</string>
+    <string name="share" translatable="false">分享</string>
+    <string name="oauth" translatable="false">授权</string>
+    <string name="register" translatable="false">注册</string>
+    <string name="phone_number" translatable="false">手机号码</string>
+    <string name="verify_code" translatable="false">验证码</string>
+    <string name="password" translatable="false">密码</string>
+    <string name="last_step" translatable="false">上一步</string>
+    <string name="next_step" translatable="false">下一步</string>
+    <string name="done" translatable="false">完成</string>
+    <string name="save" translatable="false">保存</string>
+    <string name="back" translatable="false">返回</string>
+    <string name="delete" translatable="false">删除</string>
+    <string name="skip" translatable="false">跳过</string>
+    <string name="agree" translatable="false">同意</string>
+    <string name="user_nickname" translatable="false">用户昵称</string>
+    <string name="nickname" translatable="false">昵称</string>
+    <string name="age" translatable="false">年龄</string>
+    <string name="gender" translatable="false">性别</string>
+    <string name="all" translatable="false">全部</string>
+    <string name="ijou" translatable="false">以上</string>
+    <string name="male" translatable="false">男</string>
+    <string name="female" translatable="false">女</string>
+    <string name="birthday" translatable="false">生日</string>
+    <string name="year" translatable="false">年</string>
+    <string name="month" translatable="false">月</string>
+    <string name="day" translatable="false">日</string>
+    <string name="yesterday" translatable="false">昨天</string>
+    <string name="week" translatable="false">周</string>
+    <string name="search" translatable="false">搜索</string>
+    <string name="local_photo" translatable="false">照片选择</string>
+    <string name="local_video" translatable="false">本地视频</string>
+    <string name="take_photo" translatable="false">拍照</string>
+    <string name="take_video" translatable="false">拍摄</string>
+    <string name="share_success" translatable="false">分享成功</string>
+    <string name="share_failure" translatable="false">分享失败</string>
+    <string name="share_cancelled" translatable="false">分享取消</string>
+    <string name="oauth_success" translatable="false">授权成功</string>
+    <string name="oauth_failure" translatable="false">授权失败</string>
+    <string name="oauth_cancelled" translatable="false">授权取消</string>
+    <string name="login_success" translatable="false">登录成功</string>
+    <string name="login_failure" translatable="false">登录失败</string>
+    <string name="login_cancelled" translatable="false">登录取消</string>
+    <string name="commit" translatable="false">提交</string>
+    <string name="chat" translatable="false">聊天</string>
+    <string name="tag" translatable="false">标签</string>
+    <string name="desc" translatable="false">说明</string>
+    <string name="level" translatable="false">等级</string>
+    <string name="x_minutes_ago" translatable="false">分钟前</string>
+    <string name="x_hours_ago" translatable="false">小时前</string>
+    <string name="x_days_ago" translatable="false">天前</string>
+    <string name="x_years_ago" translatable="false">年前</string>
+    <string name="now" translatable="false">现在</string>
+    <string name="today" translatable="false">今天</string>
+    <string name="tomorrow" translatable="false">明天</string>
+    <string name="dayAfterTomorrow" translatable="false">后天</string>
+
+    <string-array name="constellations" translatable="false">
+        <item>白羊座</item>
+        <item>金牛座</item>
+        <item>双子座</item>
+        <item>巨蟹座</item>
+        <item>狮子座</item>
+        <item>处女座</item>
+        <item>天秤座</item>
+        <item>天蝎座</item>
+        <item>射手座</item>
+        <item>摩羯座</item>
+        <item>水瓶座</item>
+        <item>双鱼座</item>
+    </string-array>
+</resources>

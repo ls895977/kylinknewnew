@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/mine_top_back"
+    tools:context=".ui.StrangerDetailActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/line_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/ll_bar"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentTop="true"
+                android:background="@color/main_theme"
+                android:orientation="vertical"
+                android:visibility="gone"></LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:orientation="horizontal"
+                android:paddingTop="15dp">
+
+                <ImageView
+                    android:id="@+id/img_stranger_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="15dp"
+                    android:src="@mipmap/icon_back" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tv_stranger_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:drawableLeft="@mipmap/icon_girl"
+                        android:drawablePadding="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="10dp"
+                        android:text="毛毛虫"
+                        android:textColor="@color/text_normal"
+                        android:textSize="@dimen/textSize_normal"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv_stranger_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:drawableLeft="@mipmap/local2"
+                        android:drawablePadding="5dp"
+                        android:text="位置"
+                        android:textColor="@color/text_normal"
+                        android:textSize="@dimen/textSize_normal" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="15dp"
+
+                        >
+                        <Button
+                            android:id="@+id/btn_like"
+                            android:layout_width="50dp"
+                            android:layout_height="20dp"
+                            android:gravity="center"
+                            android:layout_weight="0.5"
+                            android:background="@color/def_sub_1_pink"
+                            android:text="# 关注"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_normal"
+                            android:layout_margin="5dp"
+                            android:visibility="gone"
+                            />
+                        <Button
+                            android:id="@+id/btn_contact"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:gravity="center"
+                            android:layout_weight="0.5"
+                            android:background="@drawable/bg_radius_blue_tiny"
+                            android:layout_margin="5dp"
+                            android:text="\@ 聊天"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textSize_normal" />
+                    </LinearLayout>
+                </LinearLayout>
+                <android.support.v7.widget.CardView
+                    android:layout_width="66dp"
+                    android:layout_height="66dp"
+                    android:background="@color/white"
+
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginLeft="20dp"
+                    app:cardCornerRadius="33dp">
+                    <com.maoyongxin.myapplication.server.widget.SelectableRoundedImageView
+                        android:id="@+id/stranger_header"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+
+                        android:scaleType="centerCrop"
+                        android:layout_gravity="center"
+                        app:sriv_left_bottom_corner_radius="50dip"
+                        app:sriv_left_top_corner_radius="50dip"
+                        app:sriv_right_bottom_corner_radius="50dip"
+                        app:sriv_right_top_corner_radius="50dip" />
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+
+            <com.maoyongxin.myapplication.indecator.ViewPagerDoubleIndicator
+                android:id="@+id/lin_topindicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:padding="2dp"
+
+                >
+
+                <Button
+                    android:id="@+id/btn_dynamic"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1.00"
+                    android:background="@drawable/btn_list_item_bg"
+                    android:gravity="center"
+                    android:text="动态"
+                    android:textColor="@color/text_normal"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btn_community"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_list_item_bg"
+                    android:gravity="center"
+                    android:text="圈子"
+                    android:textColor="@color/text_normal"
+                    android:textSize="20sp" />
+            </com.maoyongxin.myapplication.indecator.ViewPagerDoubleIndicator>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:background="@color/background"
+                ></View>
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_myviewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/line_tab"
+
+            android:background="@color/background"
+            >
+
+        </android.support.v4.view.ViewPager>
+    </RelativeLayout>
+
+
+</RelativeLayout>

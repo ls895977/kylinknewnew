@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.maoyongxin.myapplication.ui.CommunityDetailActivity"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/line_bottom_communityDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/btn_becomeManager"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_radius_blue_tiny"
+            android:padding="10dp"
+            android:text="成为管理员"
+            android:textColor="@color/WHITE"
+            android:textSize="@dimen/textSize_normal" />
+
+        <Button
+            android:id="@+id/btn_doOutCommunity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@color/def_sub_1_pink"
+            android:padding="10dp"
+            android:text="退出社区"
+            android:textColor="@color/WHITE"
+            android:textSize="@dimen/textSize_normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/line_bottom_communityDetail"
+        android:orientation="vertical">
+
+        <com.jky.baselibrary.widget.TitleBar
+            android:id="@+id/TitleBar_CMD"
+            style="@style/TitleBar.Main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_somoke"
+            android:fitsSystemWindows="true"
+            app:backFunction="true"
+            app:function="iconLeft|textCenter|textRight"
+            app:textCenter="社区详情"
+            app:textRight="消息管理"
+            android:visibility="gone"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+                android:padding="15dp"
+                android:elevation="0.5dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/icon_back"
+
+                    android:background="@null"
+                    android:gravity="left"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:textColor="@color/black_textview"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textSize_big"
+                    android:text="团队信息"/>
+                <TextView
+                    android:id="@+id/img_control"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="消息管理"
+                    android:gravity="right"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <com.maoyongxin.myapplication.server.widget.SelectableRoundedImageView
+                    android:id="@+id/img_DetailCommunityIcon"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="15dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/jingying"
+                    app:sriv_left_bottom_corner_radius="35dip"
+                    app:sriv_left_top_corner_radius="35dip"
+                    app:sriv_right_bottom_corner_radius="35dip"
+                    app:sriv_right_top_corner_radius="35dip" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_CommunityName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:text=""
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/textSize_normal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="团队ID："
+                            android:textColor="@color/text_normal"
+                            android:textSize="@dimen/textSize_normal" />
+
+                        <TextView
+                            android:id="@+id/tv_communityCreatTime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_normal"
+                            android:textSize="@dimen/textSize_normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="地址："
+                            android:textColor="@color/text_normal"
+                            android:textSize="@dimen/textSize_normal" />
+
+                        <TextView
+                            android:id="@+id/tv_communityAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_normal"
+                            android:maxLines="1"
+                            android:textSize="@dimen/textSize_normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:text="简介："
+                            android:textColor="@color/text_normal"
+                            android:textSize="@dimen/textSize_normal" />
+
+                        <TextView
+                            android:id="@+id/tv_communityNote"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_normal"
+                            android:textSize="@dimen/textSize_normal" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone">
+                <Button
+                    android:id="@+id/btn_EditCommunityMsg"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_radius_blue_tiny"
+
+                    android:text="编辑团队信息"
+                    android:textColor="@color/WHITE"
+                    android:textSize="@dimen/textSize_normal"
+                    android:visibility="gone"/>
+                <Button
+                    android:id="@+id/btn_EditSHow"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+
+                    android:background="@color/def_sub_1_pink"
+
+                    android:text="编辑微官网"
+                    android:textColor="@color/WHITE"
+                    android:textSize="@dimen/textSize_normal"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/white_somoke"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="5dp"
+                android:text="团队成员"
+                android:drawableLeft="@mipmap/redpoint"
+                android:textColor="@color/blue_tiny"
+                android:textSize="@dimen/textSize_big" />
+
+            <ListView
+                android:id="@+id/lv_communityPersonList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:divider="@null"
+                android:dividerHeight="0dp"></ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

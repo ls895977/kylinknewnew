@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_community_edit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.maoyongxin.myapplication.ui.CommunityEditActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/main_theme"
+        android:orientation="vertical"
+        android:visibility="gone"></LinearLayout>
+
+    <com.maoyongxin.myapplication.server.widget.SelectableRoundedImageView
+        android:id="@+id/img_communityEdit"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/picture_add"
+        app:sriv_left_bottom_corner_radius="15dip"
+        app:sriv_left_top_corner_radius="15dip"
+        app:sriv_right_bottom_corner_radius="15dip"
+        app:sriv_right_top_corner_radius="15dip" />
+
+    <Button
+        android:id="@+id/btn_changeCommunityIcon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/order_btn_bg"
+        android:padding="10dp"
+        android:text="修改社区图片"
+        android:textColor="@color/WHITE"
+        android:textSize="@dimen/textSize_normal" />
+
+    <com.maoyongxin.myapplication.server.widget.ClearWriteEditText
+        android:id="@+id/edit_communityNote"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/bg_radius_light"
+        android:gravity="start"
+        android:hint="请用简短的语言概括社区特色"
+        android:textColor="@color/text_tips_color"
+        android:textSize="@dimen/textSize_normal" />
+
+    <Button
+        android:id="@+id/btn_changeCommunity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/order_btn_bg"
+        android:padding="10dp"
+        android:text="保存"
+        android:textColor="@color/WHITE"
+        android:textSize="@dimen/textSize_normal" />
+
+</LinearLayout>

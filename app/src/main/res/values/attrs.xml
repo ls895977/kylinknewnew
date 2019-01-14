@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <attr name="visible_tab_count" format="integer"/>
+    <declare-styleable name="BannerLayoutStyle">
+        <attr name="selectedIndicatorColor" format="color|reference"/>
+        <attr name="unSelectedIndicatorColor" format="color|reference"/>
+        <attr name="titleBGColor" format="color|reference"/>
+        <attr name="titleColor" format="color|reference"/>
+
+
+        <attr name="indicatorShape" format="enum">
+            <enum name="rect" value="0"/>
+            <enum name="oval" value="1"/>
+        </attr>
+
+        <attr name="selectedIndicatorHeight" format="dimension|reference"/>
+        <attr name="selectedIndicatorWidth" format="dimension|reference"/>
+        <attr name="unSelectedIndicatorHeight" format="dimension|reference"/>
+        <attr name="unSelectedIndicatorWidth" format="dimension|reference"/>
+
+        <attr name="indicatorSpace" format="dimension|reference"/>
+        <attr name="indicatorMargin" format="dimension|reference"/>
+        <attr name="autoPlayDuration" format="integer|reference"/>
+        <attr name="scrollDuration" format="integer|reference"/>
+        <attr name="isAutoPlay" format="boolean"/>
+        <attr name="defaultImage" format="integer|reference"/>
+
+    </declare-styleable>
+
+
+
+    <declare-styleable name="PasswordEditText">
+        <attr name="pet_iconShow" format="integer"/>
+        <attr name="pet_iconHide" format="integer"/>
+        <attr format="reference" name="start"/>
+        <attr format="dimension" name="pad"/>
+    </declare-styleable>
+
+
+
+
+    <declare-styleable name="SettingItemsView">
+        <attr name="sivText" format="string|reference" />
+        <!-- 背景 -->
+        <attr name="sivBackground">
+            <enum name="start" value="0" />
+            <enum name="middle" value="1" />
+            <enum name="end" value="2" />
+        </attr>
+
+    </declare-styleable>
+    <!-- 为OrderItemView添加自定义属性 -->
+    <declare-styleable name="OrderItemView">
+        <attr name="oivText0" format="reference|string" />
+        <attr name="oivText1" format="reference|string" />
+        <attr name="oivText2" format="reference|string" />
+        <attr name="oivText3" format="reference|string" />
+        <attr name="oivText4" format="reference|string" />
+        <attr name="oivText0Gone" format="boolean" />
+        <attr name="oivText1Gone" format="boolean" />
+        <attr name="oivText2Gone" format="boolean" />
+        <attr name="oivText3Gone" format="boolean" />
+        <attr name="oivText4Gone" format="boolean" />
+    </declare-styleable>
+    <!--动画属性-->
+    <declare-styleable name="ParallaxView">
+        <attr name="speed" format="dimension" />
+        <attr name="src" format="reference" />
+        <attr name="sceneLength" format="integer" />
+        <attr name="randomness" format="reference" />
+        <attr name="initialState" format="enum">
+            <enum name="started" value="0" />
+            <enum name="stopped" value="1" />
+        </attr>
+    </declare-styleable>
+
+
+
+
+    <!-- Defines the custom XML attributes supported for a HorizontalListView -->
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+    <!--圆角头像-->
+    <declare-styleable name="SelectableRoundedImageView">
+        <attr name="sriv_left_top_corner_radius" format="dimension" />
+        <attr name="sriv_right_top_corner_radius" format="dimension" />
+        <attr name="sriv_left_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_right_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_border_width" format="dimension" />
+        <attr name="sriv_border_color" format="color" />
+        <attr name="sriv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+    <declare-styleable name="SwitchButton">
+        <attr name="kswThumbDrawable" format="reference" />
+        <attr name="kswThumbColor" format="color|reference" />
+        <attr name="kswThumbMargin" format="dimension|reference" />
+        <attr name="kswThumbMarginTop" format="dimension|reference" />
+        <attr name="kswThumbMarginBottom" format="dimension|reference" />
+        <attr name="kswThumbMarginLeft" format="dimension|reference" />
+        <attr name="kswThumbMarginRight" format="dimension|reference" />
+        <attr name="kswThumbWidth" format="dimension|reference" />
+        <attr name="kswThumbHeight" format="dimension|reference" />
+        <attr name="kswThumbRadius" format="dimension|reference" />
+        <attr name="kswBackRadius" format="dimension|reference" />
+        <attr name="kswBackDrawable" format="reference" />
+        <attr name="kswBackColor" format="color|reference" />
+        <attr name="kswFadeBack" format="boolean" />
+        <attr name="kswBackMeasureRatio" format="float" />
+        <attr name="kswAnimationDuration" format="integer" />
+        <attr name="kswTintColor" format="color|reference" />
+        <attr name="kswTextOn" format="string" />
+        <attr name="kswTextOff" format="string" />
+        <attr name="kswTextMarginH" format="dimension" />
+    </declare-styleable>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+</resources>

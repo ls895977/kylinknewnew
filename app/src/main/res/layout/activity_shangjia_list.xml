@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maoyongxin.myapplication.ui.editapp.renmai.shangjiaList">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_radius_blue_tiny"
+            android:padding="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="服务商列表"
+
+                android:background="@null"/>
+
+        </LinearLayout>
+        <GridView
+            android:padding="10dp"
+            android:layout_below="@+id/head"
+            android:id="@+id/gridlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="1dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbarSize="@dimen/album_dp_10"
+            android:numColumns="2"
+            android:stretchMode="columnWidth"
+            android:background="@color/white"
+            android:scrollbars="none"
+            ></GridView>
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

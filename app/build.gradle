@@ -1,0 +1,159 @@
+apply plugin: 'com.android.application'
+//                id 4
+//                sortId 4
+//                appId "wxb0657547b9176773"
+//                appSecret "b67d75c11e4255772717a89b175c0647"
+//                userName "gh_afb25ac019c9"
+//                path "pages/index/index.html?id=1"
+//                withShareTicket true
+//                miniprogramType 0
+//                bypassApproval false
+//                enable true
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        applicationId "com.maoyongxin.myapplication"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 32
+        versionName "3.2"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'arm64-v8a', 'x86'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME : applicationId,
+                JPUSH_APPKEY  : "1f0b38d435b300587fa11ad0", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+                TENCENT_APPID : "QQ开发者应用的appID",//腾讯开放平台注册应用得到的 appId
+                FACEBOOK_APPID: "appID",// facebook 注册应用得到的 appId
+                JSHARE_PKGNAME: applicationId,
+        ]
+
+    }
+    lintOptions {
+
+        checkReleaseBuilds false
+
+        abortOnError false
+    }
+    signingConfigs {
+        release {
+            storeFile file('chatApp.jks')
+            storePassword 'yiranaini'
+            keyAlias 'yiranaini'
+            keyPassword 'yiranaini'
+        }
+        debug {
+            storeFile file('chatApp.jks')
+            storePassword 'yiranaini'
+            keyAlias 'yiranaini'
+            keyPassword 'yiranaini'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            signingConfig signingConfigs.release
+        }
+
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+
+
+
+
+
+
+    sourceSets {
+        main {
+            jni.srcDirs = []
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':baselibrary')
+    compile project(':IMKit')
+    compile project(':IMLib')
+    compile project(':jcvideoplayer-lib')
+    compile files('libs/AMap3DMap_5.6.0_AMapNavi_5.4.0_AMapSearch_5.5.0_AMapLocation_3.6.1_20171128.jar')
+    compile 'org.xutils:xutils:3.4.0'
+    compile 'com.squareup.okhttp3:okhttp:3.9.0'
+    compile 'com.google.code.gson:gson:2.2.4'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.yanzhenjie:album:2.0.1'
+    compile 'com.android.support:multidex:'
+    compile files('libs/sun.misc.BASE64Decoder.jar')
+    //noinspection GradleCompatible
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile files('libs/alipaySdk-20170922.jar')
+    compile 'io.reactivex:rxjava:1.2.4'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.android.support:support-v4:26.1.0'
+    compile 'com.android.support:design:26.1.0'
+    compile 'me.leolin:ShortcutBadger:1.1.21@aar'
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    compile files('libs/pushservice-5.6.0.30.jar')
+    compile 'cn.jiguang.sdk:jpush:3.1.3'
+    // 此处以JPush 3.1.1 版本为例。
+    compile 'cn.jiguang.sdk:jcore:1.2.1'
+    // 此处以JCore 1.1.9 版本为例。
+    compile 'cn.jiguang.sdk:jshare:1.5.0'
+    // 此处以 JShare 1.5.0 版本为例，具体版本请参考压缩包 libs 的 jar 包版本。
+    compile 'cn.jiguang.sdk:jshare-qqmodel:1.5.0'
+    // 此处以 jshare-qqmodel 1.5.0  版本为例，具体版本请参考压缩包 libs 的 jar 包版本。
+    compile 'cn.jiguang.sdk:jshare-wechatmodel:1.5.0'
+    // 此处以 jshare-wechatmodel 1.5.0  版本为例，具体版本请参考压缩包 libs 的 jar 包版本。
+    compile 'cn.jiguang.sdk:jshare-sinamodel:1.5.0'
+    // 此处以 jshare-sinamodel 1.5.0  版本为例，具体版本请参考压缩包 libs 的 jar 包版本。
+    // compile 'cn.jiguang.sdk:jshare-facebookmodel:1.5.0'
+    // 此处以 jshare-facebookmodel 1.5.0  版本为例，具体版本请参考压缩包 libs 的 jar 包版本。
+    compile 'cn.jiguang.sdk:jshare-twittermodel:1.5.0'
+    // 此处以 jshare-twittermodel 1.5.0  版本为例，具体版本请参考压缩包 libs 的 jar 包版本。
+    compile 'cn.jiguang.sdk:jcore:1.1.7'
+    // 此处以 JCore 1.1.7 版本为例，具体版本请参考压缩包 libs 的 jar 包版本。
+    compile 'com.gyf.barlibrary:barlibrary:2.3.0'
+    compile 'com.lzy.widget:view-core:0.2.1'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //
+    compile project(':VideoRecorder')
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-14'
+    //没有使用特殊Header，可以不加这行
+    compile 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.5.1'
+    compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.5.1'
+    compile project(':library')
+    compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.34'
+    compile 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile files('libs/open_sdk_r6019_lite.jar')
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+}

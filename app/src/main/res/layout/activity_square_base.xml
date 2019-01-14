@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_square_base"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.maoyongxin.myapplication.ui.square.SquareBaseActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/main_theme"
+        android:orientation="vertical"
+        android:visibility="gone"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:drawablePadding="5dp"
+            android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            android:id="@+id/tv_returnBack"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/return_back"
+            android:text="返回"
+            android:textColor="@color/ksw_md_solid_checked_disable"
+            android:textSize="@dimen/textSize_bigger_dp" />
+
+        <com.maoyongxin.myapplication.indecator.ViewPagerDoubleIndicator
+            android:id="@+id/lin_topindicator"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btn_edit"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.00"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="发布"
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/textSize_big" />
+
+            <Button
+                android:id="@+id/btn_history"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="历史"
+                android:textColor="@color/BLACK"
+                android:textSize="@dimen/textSize_big" />
+        </com.maoyongxin.myapplication.indecator.ViewPagerDoubleIndicator>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/btn_update"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:background="@drawable/bg_radius_main_them"
+                android:gravity="center"
+                android:text="发送"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_normal" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="#DFDFDF"></View>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_myviewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"></android.support.v4.view.ViewPager>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="#F7F7F7"></View>
+</LinearLayout>

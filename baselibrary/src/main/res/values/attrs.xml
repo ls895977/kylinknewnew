@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AdsBanner">
+        <attr name="bannerHeight" format="dimension|reference"/>
+        <attr name="matchParentHeight" format="boolean"/>
+        <attr name="autoPager" format="boolean"/>
+        <attr name="autoPagerMillis" format="integer"/>
+        <attr name="showIndicator" format="boolean"/>
+        <attr name="setIndicatorGravity">
+            <flag name="left" value="-1"/>
+            <flag name="center" value="0"/>
+            <flag name="right" value="1"/>
+        </attr>
+        <attr name="setIndicatorSelector" format="reference"/>
+        <attr name="showText" format="boolean"/>
+        <attr name="setTextGravity">
+            <flag name="left" value="-1"/>
+            <flag name="center" value="0"/>
+            <flag name="right" value="1"/>
+        </attr>
+        <attr name="setTextSize" format="integer"/>
+        <attr name="setTextColor" format="color|reference"/>
+        <attr name="setTextBackgroundColor" format="color|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="TitleBar">
+        <attr name="height" format="dimension"/>
+        <attr name="backgroundColor" format="color|reference"/>
+
+        <attr name="textCenter" format="string|reference"/>
+        <attr name="textSizeCenter" format="integer"/>
+        <attr name="textColorCenter" format="color|reference"/>
+
+        <attr name="iconCenter" format="reference"/>
+
+        <attr name="textLeft" format="string|reference"/>
+        <attr name="textSizeLeft" format="integer"/>
+        <attr name="textColorLeft" format="color|reference"/>
+        <attr name="textBackgroundLeft" format="reference"/>
+        <attr name="textLeftMarginLeft" format="dimension|reference"/>
+
+        <attr name="iconLeft" format="reference"/>
+        <attr name="iconLeftMarginLeft" format="dimension|reference"/>
+        <attr name="iconBackgroundLeft" format="reference"/>
+
+        <attr name="textRight" format="string|reference"/>
+        <attr name="textSizeRight" format="integer"/>
+        <attr name="textColorRight" format="color|reference"/>
+        <attr name="textBackgroundRight" format="reference"/>
+        <attr name="textRightMarginRight" format="dimension|reference"/>
+
+        <attr name="iconRight" format="reference"/>
+        <attr name="iconRightMarginRight" format="dimension|reference"/>
+        <attr name="iconBackgroundRight" format="reference"/>
+
+        <attr name="backFunction" format="boolean"/>
+        <attr name="iconBack" format="reference"/>
+
+        <attr name="underline" format="boolean"/>
+        <attr name="underlineHeight" format="dimension"/>
+        <attr name="underlineColor" format="color|reference"/>
+        <attr name="function">
+            <flag name="iconLeft" value="1"/>
+            <flag name="textLeft" value="2"/>
+            <flag name="iconCenter" value="4"/>
+            <flag name="textCenter" value="8"/>
+            <flag name="iconRight" value="16"/>
+            <flag name="textRight" value="32"/>
+        </attr>
+    </declare-styleable>
+
+
+</resources>

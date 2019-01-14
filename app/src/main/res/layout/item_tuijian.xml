@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    >
+<android.support.v7.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    app:cardElevation="1dp"
+    >
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gridId"
+                android:visibility="gone"/>
+            <ImageView
+                android:id="@+id/tuijian_img"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="推荐产品的标题"
+                android:background="@color/white_somoke"
+                android:padding="3dp"
+                android:maxLines="2"
+                android:textSize="@dimen/textSize_small"
+                android:id="@+id/tuijian_title"/>
+            <TextView
+                android:id="@+id/tuijian_subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="限时10名额"
+                android:padding="5dp"
+                android:gravity="center"
+                android:background="@color/red"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+</android.support.v7.widget.CardView>
+
+</LinearLayout>

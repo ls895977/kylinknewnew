@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.maoyongxin.myapplication.ui.CreateGroupActivity">
+
+    <com.jky.baselibrary.widget.TitleBar
+        android:id="@+id/TitleBar_like"
+        style="@style/TitleBar.White"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:backFunction="true"
+        app:function="iconLeft|textCenter"
+        app:textCenter="创建群组" />
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+
+      android:orientation="vertical"
+      android:gravity="center">
+      <ImageView
+          android:id="@+id/group_img"
+          android:layout_width="match_parent"
+          android:layout_height="160dp"
+          android:src="@drawable/tupian"
+          android:scaleType="centerCrop"/>
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+          android:text="点击设置头像"/>
+
+  </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商会名称："
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/textSize_normal" />
+
+        <EditText
+            android:id="@+id/edit_groupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入商会名称"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/textSize_normal" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="商会类型:"/>
+        <TextView
+            android:id="@+id/tvGrouptype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商会大类"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/thick_divider_1px"
+        android:background="@color/rc_divider_line"></View>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="商会简介："
+        android:textColor="@color/text_normal"
+        android:textSize="@dimen/textSize_normal" />
+
+    <EditText
+        android:id="@+id/edit_group_content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@null"
+        android:gravity="start"
+        android:hint="请输入商会描述"
+        android:padding="10dp"
+        android:textColor="@color/text_normal"
+        android:textSize="@dimen/textSize_normal" />
+
+
+    <Button
+        android:id="@+id/btn_create_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_radius_blue_tiny"
+        android:gravity="center"
+
+        android:text="创    建"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_normal" />
+</LinearLayout>

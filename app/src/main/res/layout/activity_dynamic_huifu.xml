@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maoyongxin.myapplication.ui.groupchat.Dynamic_huifu"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/background"
+        android:elevation="@dimen/album_dp_1">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/album_dp_10"
+            android:src="@mipmap/return_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="50dp"
+            android:textSize="@dimen/textSize_bigger"
+            android:layout_weight="1"
+            android:text="回复"/>
+
+        <ImageButton
+            android:id="@+id/Ib_Dynamic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@color/background"
+            android:src="@mipmap/fasong"
+            />
+
+
+    </LinearLayout>
+<TextView
+    android:id="@+id/tv_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="父级"
+    android:paddingLeft="15dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <io.github.rockerhieu.emojicon.EmojiconEditText
+            android:layout_weight="1"
+            android:id="@+id/ed_huifu_d"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="60dp"
+            android:background="@null"
+            android:gravity="start"
+            android:padding="15dp"
+            android:hint="回复一下..."
+
+            />
+
+        <EditText
+            android:visibility="gone"
+            android:layout_weight="1"
+            android:id="@+id/ed_Dynamic_detail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="60dp"
+            android:background="@null"
+            android:gravity="start"
+            android:padding="15dp"
+            android:textSize="@dimen/textSize_normal"
+            android:hint="回复一下..."/>
+        <RelativeLayout
+            android:id="@+id/moj_btn"
+            android:layout_gravity="right"
+            android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:background="@mipmap/ab1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <FrameLayout
+            android:visibility="gone"
+            android:id="@+id/moj_view"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"></FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/background"></LinearLayout>
+</LinearLayout>

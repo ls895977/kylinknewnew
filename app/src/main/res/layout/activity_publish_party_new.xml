@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maoyongxin.myapplication.ui.PublishParty_new">
+<com.maoyongxin.myapplication.server.widget.HeaderViewPager
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:hvp_topOffset="50dp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/jingying"
+            android:layout_marginTop="3dp"
+            android:scaleType="centerCrop"/>
+
+         <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_publish_area"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/right_arrow"
+            android:gravity="center"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:text="区域"
+            android:textColor="@color/text_heavy"
+            android:textSize="@dimen/textSize_normal" />
+
+        <TextView
+            android:id="@+id/tv_publishKind"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/right_arrow"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="种类"
+            android:textColor="@color/text_heavy"
+            android:textSize="@dimen/textSize_normal" />
+
+        <TextView
+            android:id="@+id/tv_publishTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@mipmap/right_arrow"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="发布时间"
+            android:textColor="@color/text_deco"
+            android:textSize="@dimen/textSize_normal" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.maoyongxin.myapplication.ui.widget.mylistview.LoadListView
+            android:id="@+id/lv_publish_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:dividerHeight="0dp"
+            android:divider="@null"
+            ></com.maoyongxin.myapplication.ui.widget.mylistview.LoadListView>
+
+        <ImageView
+            android:id="@+id/img_floating"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="20dp"
+            android:src="@mipmap/add_float"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/line_cityChooser"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="GPS"
+                        android:textColor="@color/text_deco"
+                        android:textSize="@dimen/textSize_normal" />
+
+                    <TextView
+                        android:id="@+id/tv_myLocationArea"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="四川 成都"
+                        android:textColor="@color/text_heavy"
+                        android:textSize="@dimen/textSize_normal" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_refresh_location"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/icon_fresh"
+                    android:gravity="center"
+                    android:text="刷新"
+                    android:textColor="@color/blue_title"
+                    android:textSize="@dimen/textSize_normal" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/thick_divider_1px"
+                android:background="@color/background"></View>
+
+            <LinearLayout
+            android:id="@+id/zone_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            >
+
+            <ListView
+                android:id="@+id/lv_province"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:choiceMode="singleChoice"
+                android:divider="@color/text_deco"
+                android:dividerHeight="@dimen/thick_divider_1px"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none"></ListView>
+
+            <View
+                android:layout_width="@dimen/thick_divider_1px"
+                android:layout_height="match_parent"
+                android:background="@color/rc_divider_line"></View>
+
+            <ListView
+                android:id="@+id/lv_city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:choiceMode="singleChoice"
+                android:divider="@color/text_deco"
+                android:dividerHeight="@dimen/thick_divider_1px"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none"></ListView>
+
+            <View
+                android:layout_width="@dimen/thick_divider_1px"
+                android:layout_height="match_parent"
+                android:background="@color/rc_divider_line"></View>
+
+            <GridView
+                android:id="@+id/lv_area"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:numColumns="2"
+                android:verticalSpacing="@dimen/thick_divider_1px"></GridView>
+        </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.maoyongxin.myapplication.server.widget.HeaderViewPager>
+</FrameLayout>

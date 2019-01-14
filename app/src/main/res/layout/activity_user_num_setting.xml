@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:orientation="vertical">
+    <com.jky.baselibrary.widget.TitleBar
+        android:id="@+id/TitleBar_like"
+        style="@style/TitleBar.White"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:backFunction="true"
+        app:function="iconLeft|textCenter"
+        app:textCenter="系统设置" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="#DFDFDF"></View>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3px"
+        android:background="#F7F7F7"></View>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="账号与安全"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/textSize_big" />
+
+        <ImageView
+            android:src="@drawable/arrow_right"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_dp_1"
+        android:background="#F7F7F7"></View>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="消息提醒"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/textSize_big" />
+
+        <ImageView
+            android:src="@drawable/arrow_right"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_dp_1"
+        android:background="#F7F7F7"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="防骚扰模式"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/textSize_big" />
+
+        <ImageView
+            android:src="@drawable/arrow_right"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_dp_1"
+        android:background="#F7F7F7"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="声音调试"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/textSize_big" />
+
+        <ImageView
+            android:src="@drawable/arrow_right"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_dp_1"
+        android:background="#F7F7F7"></View>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="版本号："
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/textSize_big" />
+
+        <TextView
+            android:id="@+id/tv_versionNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="1.0"
+            android:textColor="@color/text_normal"
+            android:layout_weight="1"
+            android:textSize="@dimen/textSize_big" />
+        <TextView
+            android:id="@+id/updatecheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可更新"
+            android:textColor="@color/red"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_dp_1"
+        android:background="#F7F7F7"></View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自动登录："
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/textSize_big" />
+
+        <com.maoyongxin.myapplication.ui.widget.switchbutton.SwitchButton
+            android:id="@+id/sw_isauto"
+            style="@style/SwitchButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:kswAnimationDuration="300"
+            app:kswBackDrawable="@drawable/ios_back_drawable"
+            app:kswBackMeasureRatio="1.4"
+            app:kswThumbDrawable="@drawable/ios_thumb"
+            app:kswThumbMarginBottom="-8dp"
+            app:kswThumbMarginLeft="-5dp"
+            app:kswThumbMarginRight="-5dp"
+            app:kswThumbMarginTop="-2.5dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/album_dp_1"
+        android:background="#F7F7F7"></View>
+
+    <Button
+        android:id="@+id/btn_doLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_radius_blue_tiny"
+        android:text="退出当前账号"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_big" />
+</LinearLayout>

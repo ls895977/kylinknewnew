@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/groupitem"
+        android:layout_width="fill_parent"
+        android:layout_height="52dp"
+        android:background="@drawable/btn_list_item_bg"
+        android:orientation="horizontal">
+
+        <com.maoyongxin.myapplication.server.widget.SelectableRoundedImageView
+            android:id="@+id/groupuri"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/rc_default_portrait"
+            app:sriv_left_bottom_corner_radius="23dip"
+            app:sriv_left_top_corner_radius="23dip"
+            app:sriv_right_bottom_corner_radius="23dip"
+            app:sriv_right_top_corner_radius="23dip" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+    <TextView
+        android:id="@+id/groupname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_weight="1"
+        android:text="群组一"
+        android:textColor="#353535"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/group_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+
+        android:layout_marginLeft="12dp"
+        android:text="群号"
+        />
+</LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="10dp"
+        android:background="#ccc" />
+
+</LinearLayout>

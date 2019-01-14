@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:visibility="gone"></LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:background="#7ECEF3">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="@mipmap/ic_back_white" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:foregroundGravity="right"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ac_title_search_icon" />
+    </RelativeLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:elevation="0dp">
+
+    <android.support.design.widget.CollapsingToolbarLayout
+        android:id="@+id/collapsing_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+        <!-- 可伸缩背景图布局文件 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:tag="tab_indicator_accent_color,bg_primary_color"
+            android:visibility="visible"
+            app:layout_collapseMode="pin">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#50d7d7d7"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/line_groupDetail"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/de_transparent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/groupPic"
+                    android:scaleType="centerCrop"
+                    android:transitionName="qtx"
+
+                    />
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal"
+                    android:layout_weight="1"
+                    android:layout_gravity="bottom|center"
+                    android:layout_margin="@dimen/album_dp_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_groupName"
+                        android:text="百乐交流群"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:transitionName="shanghuiName"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        />
+                    <TextView
+                        android:drawablePadding="10dp"
+
+                        android:id="@+id/tv_personNum"
+                        android:text="677人"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:transitionName="shanghuiNum"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:padding="@dimen/album_dp_10"
+                    >
+
+                    <TextView
+                        android:id="@+id/join_group"
+
+                        android:text="申请加入"
+                        android:textColor="@color/main_theme"
+                        android:textSize="@dimen/textSize_big"
+                        android:background="@drawable/bg_radius_white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+
+    </android.support.design.widget.CollapsingToolbarLayout>
+
+        <com.maoyongxin.myapplication.indecator.ViewPagerIndicator
+            android:id="@+id/indicator_group"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:elevation="1dp"
+            android:layout_gravity="center_horizontal"
+
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/btn_jianjie"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.00"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="简介"
+                android:textColor="@color/text_tips_color"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_huati"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.00"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="话题"
+                android:textColor="@color/text_tips_color"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btn_faxian"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.00"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="发现"
+                android:textColor="@color/text_tips_color"
+                android:textSize="20sp" />
+        </com.maoyongxin.myapplication.indecator.ViewPagerIndicator>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_viewPager"
+            android:layout_width="match_parent"
+            android:layout_below="@id/indicator_group"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        </android.support.v4.view.ViewPager>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_height="50dp"
+            android:text="\@进入群聊"
+            android:textColor="@color/blue_tiny"
+            android:background="@color/background"
+            android:elevation="@dimen/album_dp_1"
+            android:id="@+id/jrql"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textColor="@color/blue_tiny"
+            android:background="@color/background"
+            android:elevation="@dimen/album_dp_1"
+            android:text="#发布话题"
+            android:id="@+id/fbht"/>
+    </LinearLayout>
+
+</LinearLayout>

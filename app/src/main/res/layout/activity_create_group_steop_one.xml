@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maoyongxin.myapplication.ui.CreateGroupSteopOne"
+    android:background="@color/white"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/groupimg"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:src="@drawable/tupian"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="点击设置头像"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="商会名称："
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/textSize_normal" />
+
+        <EditText
+            android:id="@+id/editgroupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入商会名称"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/textSize_normal" />
+    </LinearLayout>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="商会大类:"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:textSize="@dimen/textSize_small"/>
+
+    <GridView
+        android:layout_marginTop="10dp"
+        android:id="@+id/groupTypegride"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:background="@color/white"
+        android:scrollbars="none"
+        android:padding="10dp"
+
+        ></GridView>
+
+    <Button
+        android:id="@+id/newxtStep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_radius_blue_tiny"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_normal" />
+</LinearLayout>
+</android.support.constraint.ConstraintLayout>

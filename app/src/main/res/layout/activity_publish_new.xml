@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.maoyongxin.myapplication.ui.Publish_new">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll"
+                >
+                <ImageView
+                    android:src="@drawable/jingying"
+                    android:layout_width="wrap_content"
+                    android:layout_height="220dp"
+                    android:scaleType="centerCrop"/>
+
+            </LinearLayout>
+
+               <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#f0f"
+                app:layout_scrollFlags="scroll"
+                   android:visibility="invisible"
+                ></View>
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+     <LinearLayout
+         android:id="@+id/ll1"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@color/white"
+         android:orientation="horizontal">
+
+         <TextView
+             android:id="@+id/tv_publish_area"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:drawableRight="@mipmap/right_arrow"
+             android:gravity="center"
+             android:padding="5dp"
+             android:singleLine="true"
+             android:text="区域"
+             android:textColor="@color/text_heavy"
+             android:textSize="@dimen/textSize_normal" />
+
+         <TextView
+             android:id="@+id/tv_publishKind"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:drawableRight="@mipmap/right_arrow"
+             android:gravity="center"
+             android:padding="5dp"
+             android:text="种类"
+             android:textColor="@color/text_heavy"
+             android:textSize="@dimen/textSize_normal" />
+
+         <TextView
+             android:id="@+id/tv_publishTime"
+             android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:drawableRight="@mipmap/right_arrow"
+             android:gravity="center"
+             android:padding="5dp"
+             android:text="发布时间"
+             android:textColor="@color/text_deco"
+             android:textSize="@dimen/textSize_normal" />
+     </LinearLayout>
+
+ </RelativeLayout>
+
+
+
+        </android.support.design.widget.AppBarLayout>
+
+        <com.maoyongxin.myapplication.ui.widget.mylistview.LoadListView
+            android:id="@+id/lv_publish_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:dividerHeight="0dp"
+            android:divider="@null"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            ></com.maoyongxin.myapplication.ui.widget.mylistview.LoadListView>
+        <LinearLayout
+            android:layout_below="@+id/ll1"
+            android:id="@+id/zone_line"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            >
+
+            <ListView
+
+                android:id="@+id/lv_province"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:choiceMode="singleChoice"
+                android:divider="@color/text_deco"
+                android:dividerHeight="@dimen/thick_divider_1px"
+                android:listSelector="@android:color/transparent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:scrollbars="none"></ListView>
+
+            <View
+                android:layout_width="@dimen/thick_divider_1px"
+                android:layout_height="match_parent"
+                android:background="@color/rc_divider_line"></View>
+
+            <ListView
+                android:id="@+id/lv_city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:choiceMode="singleChoice"
+                android:divider="@color/text_deco"
+                android:dividerHeight="@dimen/thick_divider_1px"
+                android:listSelector="@android:color/transparent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:scrollbars="none"></ListView>
+
+            <View
+                android:layout_width="@dimen/thick_divider_1px"
+                android:layout_height="match_parent"
+                android:background="@color/rc_divider_line"></View>
+
+            <GridView
+                android:id="@+id/lv_area"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:numColumns="2"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                android:verticalSpacing="@dimen/thick_divider_1px"></GridView>
+        </LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</LinearLayout>

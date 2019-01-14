@@ -1,0 +1,22 @@
+<resources>
+    <string name="default_rationale_dialog_text" translatable="false">App需要您的授权</string>
+
+    <string name="location_rationale" translatable="false">请授予App【定位权限】，以便您可以正常使用相关功能与服务</string>
+    <string name="location_deny_dialog" translatable="false">App没有获得【定位权限】，相关功能无法正常进行</string>
+
+    <string name="camera_rationale" translatable="false">请授予App【摄像权限】，以便您可以正常使用相关功能与服务</string>
+    <string name="camera_deny_dialog" translatable="false">App没有获得【摄像权限】，相关功能无法正常进行</string>
+
+    <string name="storage_rationale" translatable="false">请授予App【存储权限】，以便您可以正常使用相关功能与服务</string>
+    <string name="storage_deny_dialog" translatable="false">App没有获得【存储权限】，相关功能无法正常进行</string>
+
+    <string name="mic_rationale" translatable="false">请授予App【麦克风权限】，以便您可以正常使用相关功能与服务</string>
+    <string name="mic_deny_dialog" translatable="false">App没有获得【麦克风权限】，相关功能无法正常进行</string>
+
+    <string name="phone_rationale" translatable="false">请授予App【电话权限】，以便您可以正常使用相关功能与服务</string>
+    <string name="phone_deny_dialog" translatable="false">App没有获得麦【电话权限】，相关功能无法正常进行</string>
+
+    <string name="contacts_rationale" translatable="false">请授予App【通讯录权限】，以便您可以正常使用相关功能与服务</string>
+    <string name="contacts_deny_dialog" translatable="false">App没有获得麦【通讯录权限】，相关功能无法正常进行</string>
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="群简介："
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/textSize_bigger_dp" />
+        <TextView
+            android:id="@+id/tv_groupJianjie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/textSize_bigger_dp" />
+
+    </LinearLayout>
+
+
+</ScrollView>

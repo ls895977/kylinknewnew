@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/album_dp_15"
+        android:padding="@dimen/album_dp_6">
+
+        <ImageView
+            android:id="@+id/zhihutitle_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_back11" />
+
+        <ImageView
+            android:id="@+id/zhihutitle_liebiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/icon_liebiao" />
+
+        <ImageView
+            android:id="@+id/zhihutitle_secher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dip_10"
+            android:layout_toLeftOf="@+id/zhihutitle_liebiao"
+            android:paddingRight="@dimen/album_dp_15"
+            android:background="@drawable/icon_secher" />
+    </RelativeLayout>
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="180dip"
+        android:layout_height="65dp"
+        android:background="#ffffff"
+        app:tl_indicator_color="#e7ac74"
+        app:tl_indicator_margin_top="0dp"
+        app:tl_indicator_width="15dp"
+        app:tl_tab_space_equal="true"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:padding="@dimen/album_dp_10"
+        app:tl_textSelectColor="#e7ac74"
+        app:tl_textUnselectColor="#4e4e4e"
+        app:tl_textsize="22sp"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="6dp"/>
+</LinearLayout>

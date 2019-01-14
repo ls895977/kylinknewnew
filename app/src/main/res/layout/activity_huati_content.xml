@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:context="com.maoyongxin.myapplication.ui.groupchat.huatiDetail">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp"
+             >
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/icon_back"/>
+            </LinearLayout>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:textSize="@dimen/textSize_bigger"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+               />
+
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/shoucanghuati"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@mipmap/more_icon2"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/background"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/album_dp_6"
+            android:layout_marginTop="@dimen/album_dp_15"
+            android:visibility="gone"
+            android:elevation="1dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="15dp">
+                <com.maoyongxin.myapplication.server.widget.SelectableRoundedImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/usr_head"
+                    android:src="@drawable/head_pre"
+                    android:scaleType="centerCrop"
+                    app:sriv_left_bottom_corner_radius="50dip"
+                    app:sriv_left_top_corner_radius="50dip"
+                    app:sriv_right_bottom_corner_radius="50dip"
+                    app:sriv_right_top_corner_radius="50dip"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/host_name"
+                            android:textSize="@dimen/textSize_normal"
+                            android:text="发布人" />
+
+                        <Button
+                            android:id="@+id/bt_talk"
+                            android:layout_width="45dp"
+                            android:layout_height="25dp"
+                            android:background="@drawable/bg_radius_blue_tiny"
+                            android:text="动态"
+                            android:textColor="@color/white"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/album_dp_6"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/huati_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="标题内容"
+
+                            android:textColor="@color/black_textview"
+                            android:textSize="@dimen/textSize_bigger_dp" />
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                >
+
+                <TextView
+                    android:id="@+id/fabu_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="65dp"
+                    android:text="时间" />
+                <ImageView
+                    android:id="@+id/im_bad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:src="@mipmap/bed_big"
+                    android:layout_marginRight="5dp"
+                    android:visibility="gone"
+                    />
+                <TextView
+                    android:id="@+id/numBad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:text="88"
+                    android:visibility="gone"
+                    />
+                <ImageView
+                    android:id="@+id/im_good"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_good"
+                    android:background="@null"
+
+                    android:layout_marginRight="5dp"/>
+                <TextView
+                    android:id="@+id/numZan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/black_overlay"
+                    android:text="99"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="@dimen/album_dp_15"
+                android:background="#dddddd"
+                />
+
+            <TextView
+                android:id="@+id/huati_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:layout_marginBottom="@dimen/album_dp_4"
+
+                android:text="话题内容..." />
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/huifu_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:scrollbars="none"
+            android:dividerHeight="0dp"
+            android:divider="@null"
+           ></ListView>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/bt_huifu"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/blue_tiny"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:text="回复"/>
+        </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="margin_horizontal">8dp</dimen>
+    <dimen name="margin_sub_horizontal">4dp</dimen>
+    <dimen name="margin_vertical">8dp</dimen>
+    <dimen name="margin_sub_vertical">4dp</dimen>
+
+    <dimen name="thick_divider_1px">0.67dp</dimen>
+    <dimen name="thick_divider_line">1dp</dimen>
+    <dimen name="thick_divider_strap">4dp</dimen>
+    <dimen name="dip_10">10dip</dimen>
+    <dimen name="dip_15">15dip</dimen>
+    <dimen name="dip_5">5dip</dimen>
+    <dimen name="InputBar_Stroke">0.67dp</dimen>
+    <dimen name="fond_16sp">16sp</dimen>
+
+    <dimen name="textSize_max">20sp</dimen>
+    <dimen name="textSize_max_dp">20dp</dimen>
+    <dimen name="textSize_bigger">18sp</dimen>
+    <dimen name="textSize_bigger_dp">18dp</dimen>
+    <dimen name="textSize_big">16sp</dimen>
+    <dimen name="textSize_big_dp">16dp</dimen>
+    <dimen name="textSize_normal">14sp</dimen>
+    <dimen name="textSize_normal_dp">14dp</dimen>
+    <dimen name="textSize_small">12sp</dimen>
+    <dimen name="textSize_small_dp">12dp</dimen>
+    <dimen name="textSize_min">10sp</dimen>
+    <dimen name="textSize_min_dp">10dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="de_conversation_item_name_size">16sp</dimen>
+    <dimen name="de_message_send_status_image_size">17dp</dimen>
+    <dimen name="de_conversation_item_data_size">14sp</dimen>
+    <dimen name="textSize_biggest">30sp</dimen>
+    <!--SWITCH-->
+    <dimen name="ksw_md_thumb_ripple_size">42dp</dimen>
+    <dimen name="ksw_md_thumb_solid_inset">11dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset">11dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset_top">11dp</dimen>
+    <dimen name="ksw_md_thumb_shadow_inset_bottom">10dp</dimen>
+    <dimen name="list_item_spacing">16dp</dimen>
+    <dimen name="list_item_spacing_half">8dp</dimen>
+</resources>

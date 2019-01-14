@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+
+    android:layout_marginTop="5dp"
+    >
+
+    <LinearLayout
+        android:id="@+id/tuijianHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:visibility="gone">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            android:background="@color/white">
+            <com.maoyongxin.myapplication.ui.news.activity.BannerLayout
+                android:id="@+id/banne_tuijian"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+
+                app:indicatorMargin="10dp"
+                app:indicatorShape="oval"
+                app:indicatorSpace="2dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:scrollDuration="1100"
+                app:selectedIndicatorColor="?attr/colorPrimary"
+                app:selectedIndicatorHeight="6dp"
+                app:selectedIndicatorWidth="6dp"
+                app:titleColor="#ff0000"
+                app:unSelectedIndicatorColor="#99ffffff"
+                app:unSelectedIndicatorHeight="6dp"
+                app:unSelectedIndicatorWidth="6dp"
+
+                />
+
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="优品直达"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/tuijianList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            ></android.support.v7.widget.RecyclerView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="企业服务"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="5dp"
+        app:cardElevation="2dp"
+        android:id="@+id/card_fuwu"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:background="@color/white"
+
+
+            >
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gridId"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/img_fuwu"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="left"
+                android:scaleType="centerCrop" />
+            <TextView
+                android:id="@+id/fuwuname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="测试数据"
+                android:padding="5dp"
+
+                android:background="@color/white"
+
+                android:textColor="@color/text_tab"/>
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

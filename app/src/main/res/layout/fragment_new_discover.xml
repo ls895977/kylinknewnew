@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WHITE">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:elevation="1dp"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:background="@null"
+            android:layout_gravity="center_vertical">
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/app_icon"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:background="@null"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bison Business"
+                    android:gravity="left"
+                    android:textSize="@dimen/textSize_bigger_dp"
+                    android:layout_marginRight="5dp"
+
+                    android:textStyle="bold"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="家有良田万顷，不如彼此有信"
+                    android:gravity="left"
+                    android:textSize="@dimen/textSize_small_dp"
+
+                    android:textStyle="bold"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/line_top"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginLeft="50dp"
+                android:focusable="true"
+                android:paddingTop="10dp"
+                android:focusableInTouchMode="true"
+                android:layout_gravity="right"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                >
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                    android:src="@mipmap/bells" />
+                <com.maoyongxin.myapplication.indecator.ViewPagerDoubleIndicator
+                    android:id="@+id/linTopindicator"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    >
+
+                    <Button
+                        android:id="@+id/btn_renmai"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1.00"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:text="动态"
+                        android:textStyle="normal"
+                        android:textColor="@color/black_textview"
+                        android:textSize="@dimen/textSize_normal" />
+
+                    <Button
+                        android:id="@+id/btn_renmai_list"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:textStyle="normal"
+                        android:text="新闻"
+                        android:textColor="@color/stroke_heavy"
+                        android:textSize="@dimen/textSize_normal" />
+                </com.maoyongxin.myapplication.indecator.ViewPagerDoubleIndicator>
+
+
+
+                <EditText
+                    android:id="@+id/tv_search"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:background="@drawable/rc_corner_style"
+                    android:textSize="@dimen/textSize_small"
+                    android:paddingLeft="5dp"
+                    android:gravity="center"
+                    android:text="工业3D打印"
+                    android:imeOptions="actionSearch"
+                    android:singleLine="true"
+                    android:transitionName="srcEdit"
+                    android:layout_weight="3"
+                    android:clickable="false"
+                    android:visibility="gone"
+                    />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:orientation="horizontal"
+                android:background="@null"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:paddingRight="10dp"
+                android:visibility="gone">
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/great_weather"
+                    android:background="@null"/>
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/icon_calender"
+                    android:background="@null"/>
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/sandian"
+                    android:background="@null"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/remmai_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/WHITE">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>

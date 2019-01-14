@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maoyongxin.myapplication.ui.group_headEidt">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/BLACK"
+        android:orientation="vertical">
+        <ProgressBar
+            android:id="@+id/pg_update"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:layout_centerInParent="true"
+            android:elevation="3dp"
+            android:layout_margin="@dimen/album_dp_10"
+            android:visibility="invisible"
+             />
+
+        <com.jky.baselibrary.widget.TitleBar
+            android:id="@+id/TitleBar_group"
+            style="@style/TitleBar.Black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:backFunction="true"
+            app:function="iconLeft|textCenter"
+            app:textCenter="编辑群组" />
+
+        <ImageView
+            android:id="@+id/groupPic"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/jingying" />
+        <ImageView
+            android:id="@+id/add_pics"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/picture_add"
+            android:layout_below="@+id/groupPic"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_radius_blue_tiny"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="确认修改群头像"
+            android:textColor="@color/white"
+            android:id="@+id/btn_save"/>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

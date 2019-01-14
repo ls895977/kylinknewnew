@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_community_message"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.maoyongxin.myapplication.ui.CommunityMessageActivity">
+
+    <com.jky.baselibrary.widget.TitleBar
+        android:id="@+id/TitleBar_CMD"
+        style="@style/TitleBar.Main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:backFunction="true"
+        app:function="iconLeft|textCenter"
+        app:textCenter="消息管理" />
+
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/line_managerRequest"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_theme"
+            android:padding="5dp"
+            android:text="管理员请求"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_normal" />
+
+        <TextView
+            android:id="@+id/tv_noManagerRequest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="暂无加入管理员请求"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/textSize_normal"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/lv_ManagerMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"></ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line_Request"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_theme"
+            android:padding="5dp"
+            android:text="加入请求"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize_normal" />
+
+        <TextView
+            android:id="@+id/tv_noJoinRequest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="暂无加入小区用户请求"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/textSize_normal"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/lv_joinMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"></ListView>
+    </LinearLayout>
+
+</LinearLayout>

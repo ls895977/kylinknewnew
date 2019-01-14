@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    tools:ignore="MissingTranslation"
+    <string-array name="date" translatable="false" >
+
+    </string-array>
+
+
+    <declare-styleable name="Picker">
+        <attr name="textColor" format="color|reference"/>
+        <attr name="textSize" format="dimension"/>
+        <attr name="lineColor" format="color|reference"/>
+        <attr name="lineWidth" format="dimension"/>
+        <attr name="showItemNumber" format="integer"/>
+        <attr name="alphaPicked" format="float"/>
+        <attr name="alphaNormal" format="float"/>
+        <attr name="heightTimes" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="StarView">
+        <attr name="starNormal" format="reference"/>
+        <attr name="starSelected" format="reference"/>
+        <attr name="marginBetweenStars" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="HeaderViewPager">
+        <attr name="hvp_topOffset" format="dimension"/>
+    </declare-styleable>
+
+</resources>

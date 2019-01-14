@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.maoyongxin.myapplication.ui.groupchat.huatihuifu"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:elevation="@dimen/album_dp_1"
+        android:paddingTop="12dp"
+        android:paddingBottom="4dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/album_dp_10"
+            android:src="@mipmap/icon_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textSize="@dimen/textSize_bigger"
+            android:layout_weight="1"
+            android:text="回复"/>
+
+        <ImageButton
+            android:id="@+id/Ib_querenhuifu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/album_dp_10"
+            android:background="@color/white"
+            android:src="@mipmap/fasong"
+            />
+
+    </LinearLayout>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:id="@+id/ed_huifu_detail"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="60dp"
+        android:background="@null"
+        android:gravity="start"
+        android:padding="15dp"
+        android:textSize="@dimen/textSize_normal"
+        android:hint="回复一下..."/>
+
+    <io.github.rockerhieu.emojicon.EmojiconEditText
+
+        android:layout_weight="1"
+        android:id="@+id/ed_huifu_d"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="60dp"
+        android:background="@null"
+        android:gravity="start"
+        android:padding="15dp"
+        android:hint="回复一下..."
+
+        />
+
+
+
+    <RelativeLayout
+        android:id="@+id/moj_btn"
+      android:layout_gravity="right"
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:background="@mipmap/ab1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/moj_view"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"></FrameLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/background"></LinearLayout>
+</LinearLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.maoyongxin.myapplication.server.widget.SelectableRoundedImageView
+        android:id="@+id/headimg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        app:sriv_left_bottom_corner_radius="50dp"
+        app:sriv_right_top_corner_radius="50dp"
+        app:sriv_right_bottom_corner_radius="50dp"
+        app:sriv_left_top_corner_radius="50dp"
+        android:src="@mipmap/app_icon"
+        android:elevation="3dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_bar"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/main_theme"
+            android:orientation="vertical"
+            android:visibility="gone"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="160dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="嗨，您好"
+                android:textSize="@dimen/textSize_max"
+                android:textColor="@color/blue_tiny"/>
+            <View
+                android:layout_width="80dp"
+                android:layout_height="2dp"
+                android:background="@drawable/bg_radius_blue_tiny"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="欢迎加入彼信商业社区"
+                android:layout_marginTop="8dp"/>
+        </LinearLayout>
+
+        <com.maoyongxin.myapplication.server.widget.ClearWriteEditText
+            android:id="@+id/reg_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="5dip"
+            android:textCursorDrawable="@drawable/course_white"
+            android:hint="@string/nickname"
+            android:inputType="textPersonName"
+            android:maxLength="32"
+            android:paddingLeft="20dip"
+            android:paddingRight="10dip"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/group_list_gray"
+            android:textColorHint="@color/group_list_gray"
+            android:background="@drawable/rc_corner_style"
+            android:textSize="@dimen/textSize_normal"
+
+
+            />
+
+        <com.maoyongxin.myapplication.server.widget.ClearWriteEditText
+            android:id="@+id/reg_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="5dip"
+            android:hint="@string/phone_number"
+            android:paddingLeft="20dip"
+            android:paddingRight="10dip"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:textCursorDrawable="@drawable/course_white"
+            android:maxLength="11"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:textColor="@color/group_list_gray"
+            android:textColorHint="@color/group_list_gray"
+            android:background="@drawable/rc_corner_style"
+            android:textSize="@dimen/textSize_normal"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="20dp"
+    android:gravity="center_vertical">
+    <com.maoyongxin.myapplication.server.widget.ClearWriteEditText
+        android:id="@+id/rge_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="@dimen/textSize_normal"
+        android:drawablePadding="5dip"
+        android:hint="验证码"
+        android:inputType="number"
+        android:maxLength="16"
+        android:paddingLeft="20dip"
+        android:paddingRight="10dip"
+        android:paddingBottom="6dp"
+        android:paddingTop="6dp"
+        android:maxLines="1"
+        android:textCursorDrawable="@drawable/course_white"
+        android:textColor="@color/group_list_gray"
+        android:textColorHint="@color/group_list_gray"
+        android:background="@drawable/rc_corner_style"
+
+        android:layout_weight="2"/>
+    <TextView
+        android:id="@+id/tv_getcode"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="获取验证码"
+        android:textColor="@color/blue_tiny"
+        android:layout_marginLeft="10dp"
+        />
+</LinearLayout>
+
+
+
+
+        <com.maoyongxin.myapplication.server.widget.ClearWriteEditText
+            android:id="@+id/reg_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="5dip"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingLeft="20dip"
+            android:paddingRight="10dip"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:maxLines="1"
+            android:textCursorDrawable="@drawable/course_white"
+            android:textColor="@color/group_list_gray"
+            android:textColorHint="@color/group_list_gray"
+            android:background="@drawable/rc_corner_style"
+            android:textSize="@dimen/textSize_normal"/>
+
+        <com.maoyongxin.myapplication.server.widget.ClearWriteEditText
+            android:id="@+id/again_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:drawablePadding="5dip"
+            android:hint="密码确认"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:paddingLeft="20dip"
+            android:paddingRight="10dip"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:maxLines="1"
+            android:textCursorDrawable="@drawable/course_white"
+            android:textColor="@color/group_list_gray"
+            android:textColorHint="@color/group_list_gray"
+            android:background="@drawable/rc_corner_style"
+            android:textSize="@dimen/textSize_normal"/>
+
+        <Button
+            android:padding="10dp"
+            android:id="@+id/reg_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_radius_blue_tiny"
+
+            android:text="@string/register"
+            android:textColor="@color/white" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+           android:layout_gravity="center_horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已有账号？点击"/>
+            <TextView
+                android:id="@+id/reg_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+
+                android:text="@string/Login"
+                android:textColor="@color/blue_tiny"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

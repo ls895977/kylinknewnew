@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:id="@+id/linear"
+    android:layout_marginTop="2dp"
+    android:background="#f9f4f4"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="#fff"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:textColor="@color/zhzx_wddd_text_selector"
+            android:id="@+id/texta"
+            android:padding="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电子产品"
+            android:layout_marginLeft="8dp"
+            android:textSize="14sp"
+            />
+
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/xian"
+            android:layout_marginTop="3dp"
+
+            android:layout_marginLeft="8dp"
+            android:layout_width="70dp"
+            android:layout_height="3dp"
+            android:background="@drawable/yelllow"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#faf2ecec"
+        />
+</LinearLayout>

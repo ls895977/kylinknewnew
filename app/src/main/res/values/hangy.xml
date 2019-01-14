@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="hangy"
+        translatable="false">
+        <item>企业</item>
+        <item>制造</item>
+        <item>服务业</item>
+        <item>教育</item>
+        <item>装修</item>
+        <item>设计</item>
+
+
+    </string-array>
+
+
+</resources>

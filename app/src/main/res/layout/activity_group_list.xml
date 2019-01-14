@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/de_action_white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+   <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+   </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/creatGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/album_dp_10"
+            android:layout_marginTop="@dimen/album_dp_10"
+            android:gravity="end"
+            android:text="创建商会 + "
+            android:textColor="@color/blue_tiny"
+            android:textSize="16sp"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:layout_margin="@dimen/album_dp_4"
+    android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/main_theme"
+        android:orientation="vertical"
+        android:visibility="gone"></LinearLayout>
+
+    <EditText
+        android:id="@+id/group_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@null"
+        android:drawableLeft="@drawable/sealtalk_search"
+        android:drawablePadding="10dp"
+        android:hint="请输入商会编号"
+        android:maxLines="1"
+
+        android:textSize="16sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"
+        android:background="#dfdfdd" />
+
+    <LinearLayout
+        android:id="@+id/line_searchResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:elevation="3dp">
+
+        <TextView
+            android:id="@+id/tv_searchGroupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="群组名：系手机啊大姐啊是"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/textSize_normal" />
+
+        <TextView
+            android:id="@+id/tv_searchGroupNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="备注：系手机啊大姐啊是"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/textSize_normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_askJoinGroup"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_radius_blue_tiny"
+                android:text="申请加入"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize_normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/show_no_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/fr_group_list_not_join_the_group"
+                android:textColor="@color/group_list_gray"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/group_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:divider="@null" />
+
+            <TextView
+                android:id="@+id/foot_group_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="#999"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_create_group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_somoke"
+    tools:context="com.maoyongxin.myapplication.ui.CreateGroupActivity">
+
+    <com.jky.baselibrary.widget.TitleBar
+        android:id="@+id/TitleBar_group"
+        style="@style/TitleBar.White"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        app:backFunction="true"
+        app:function="iconLeft|textCenter"
+        app:textCenter="编辑群组" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="群名称："
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/textSize_normal" />
+
+        <EditText
+            android:id="@+id/edit_groupName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入群名称"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/textSize_normal" />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="备注："
+        android:textColor="@color/text_normal"
+        android:textSize="@dimen/textSize_normal" />
+
+    <EditText
+        android:id="@+id/edit_group_content"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:gravity="start"
+        android:hint="请编辑群组描述"
+        android:padding="10dp"
+        android:textColor="@color/text_normal"
+        android:textSize="@dimen/textSize_normal"
+
+        />
+
+    <Button
+        android:id="@+id/btn_save_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_radius_blue_tiny"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="保   存"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize_normal" />
+</LinearLayout>
